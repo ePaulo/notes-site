@@ -67,13 +67,20 @@ h1 {
 .content h2,
 .content h3,
 .content p,
-.content li {
+.content li,
+.content dt,
+.content dd{
   border-bottom: 1px solid #b5c8cc;
   margin: 0;
 }
 
-.content ul {
+.content ul,
+.content dl {
   margin: 0;
+}
+
+.content dt {
+  font-weight: bold;
 }
 
 .content li ul {
@@ -100,7 +107,8 @@ h1 {
   content: "- ";
 }
 
-.content ul li.sub-list ul li {
+.content ul li.sub-list ul li,
+.content dd {
   padding-left: 120px;
 }
 
@@ -128,11 +136,13 @@ h1 {
   list-style-type: none;
 }
 
-.content ul li {
+.content ul li,
+.content dt {
   padding-left: 80px;
 }
 
-.content ul li:before {
+.content ul li:before,
+.content dd:before {
   content: "- ";
 }
 
@@ -145,23 +155,30 @@ a:hover {
   transition-duration: .5s;
   opacity: .5;
 }
-
+.accordion {
+/*   border-image: url("https://static.vecteezy.com/system/resources/previews/021/998/564/non_2x/hand-drawn-circle-highlighting-free-png.png") 27 / 36px 28px 18px 8px / 18px 14px 9px 4px
+    round; */
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 5px;
+}
 .accordion .accordion-name {
-  background-color: #eee;
   cursor: pointer;
   border: none;
   text-align: left;
   outline: none;
   transition: 0.4s;
   border-bottom: 1px solid #b5c8cc;
-}
-
-.active, .accordion .accordion-name:hover {
-  background-color: #ccc; 
+  line-height: 20px;
+  padding: 5px;
 }
 
 .accordion .inner-accordion-content {
   display: none;
-  background-color: #eee;
   overflow: hidden;
+}
+
+.accordion-arrow {
+  float: right;
+  padding-right: 15px;
 }
