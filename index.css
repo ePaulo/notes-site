@@ -87,15 +87,18 @@ h1 {
   border-bottom: 0;
 }
 
-.content li ul li:last-child {
+.content li ul li:last-child,
+.content dd ul li:last-child {
   border-bottom: 0;
 }
 
-.content ul li.sub-list {
+.content ul li.sub-list,
+.content dd.sub-list {
   padding-left: 0;
 }
 
-.content ul li.sub-list:before {
+.content ul li.sub-list:before,
+.content dd.sub-list:before {
   content: "";
 }
 
@@ -103,13 +106,22 @@ h1 {
   padding-left: 80px;
 }
 
-.content ul li.sub-list span:before {
+.content dd.sub-list span {
+  padding-left: 120px;
+}
+
+.content ul li.sub-list span:before,
+.content dd.sub-list span:before {
   content: "- ";
 }
 
 .content ul li.sub-list ul li,
 .content dd {
   padding-left: 120px;
+}
+
+.content dd.sub-list li{
+  padding-left: 160px;
 }
 
 .content li ul li:first-child {
@@ -141,6 +153,11 @@ h1 {
   padding-left: 80px;
 }
 
+.content dt,
+.content dd {
+  font-size: 20px;
+}
+
 .content ul li:before,
 .content dd:before {
   content: "- ";
@@ -156,11 +173,9 @@ a:hover {
   opacity: .5;
 }
 .accordion {
-/*   border-image: url("https://static.vecteezy.com/system/resources/previews/021/998/564/non_2x/hand-drawn-circle-highlighting-free-png.png") 27 / 36px 28px 18px 8px / 18px 14px 9px 4px
-    round; */
   border: 1px solid black;
   border-radius: 20px;
-  margin: 5px;
+  margin: 5px auto;
 }
 .accordion .accordion-name {
   cursor: pointer;
@@ -169,8 +184,6 @@ a:hover {
   outline: none;
   transition: 0.4s;
   border-bottom: 1px solid #b5c8cc;
-  line-height: 20px;
-  padding: 5px;
 }
 
 .accordion .inner-accordion-content {
