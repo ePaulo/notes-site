@@ -72,15 +72,16 @@ function switchTitle(text) {
 
 /**Accordion */
 let accordionContainer = document.getElementsByClassName("accordion");
-let accordionName = document.getElementById("accordion-name");
+let accordionName = document.getElementsByClassName("accordion-name");
 for (let i = 0; i < accordionContainer.length; i++){
-  accordionName.addEventListener("click", function() {
-    let accordionContent = document.getElementById("inner-accordion-content");
-    this.classList.toggle("active");
-    if (accordionContent.style.display === "block") {
-      accordionContent.style.display = "none";
+  accordionName[i].addEventListener("click", function() {
+    console.log(accordionName[i]);
+    let accordionContent = document.getElementsByClassName("inner-accordion-content");
+    accordionName[i].classList.toggle("active");
+    if (accordionContent[i].style.display === "block") {
+      accordionContent[i].style.display = "none";
     } else {
-      accordionContent.style.display = "block";
+      accordionContent[i].style.display = "block";
     }
   });
 };
