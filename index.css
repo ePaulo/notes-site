@@ -10,10 +10,10 @@ h1 {
 }
 
 .hero {
-  background-color: #eee;
+  background-color: #01090b;
   border-bottom: 5px solid #33bb33;
   padding: 20px;
-  color: #01090b;
+  color: #eee;
   text-align: center;
   background-image: url("https://as2.ftcdn.net/v2/jpg/02/18/72/63/1000_F_218726328_JPGdhYAJmplB8gNbLEZUoyWD9oawokWy.jpg");
   font-family: "Source Code Pro", monospace;

@@ -78,8 +78,12 @@ for (let i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
     let panel = document.querySelectorAll(".accordion .inner-accordion-content");
     if (panel.style.display === "block") {
+        console.log(acc);
+        console.log(panel);
       panel.style.display = "none";
     } else {
+        console.log(acc);
+        console.log(panel);
       panel.style.display = "block";
     }
   });
