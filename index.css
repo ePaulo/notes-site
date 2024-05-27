@@ -1,5 +1,5 @@
 body {
-  background: #010103;
+  background: #01090b;
   color: #555;
   margin: 0;
   line-height: 34px;
@@ -11,12 +11,17 @@ h1 {
 
 .hero {
   background-color: #eee;
-  border-bottom: 5px solid #55df5a;
+  border-bottom: 5px solid #33bb33;
   padding: 20px;
   color: #eee;
   text-align: center;
-  background-image: url("https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_1280.jpg");
+  background-image: url("https://as2.ftcdn.net/v2/jpg/02/18/72/63/1000_F_218726328_JPGdhYAJmplB8gNbLEZUoyWD9oawokWy.jpg");
   font-family: "Source Code Pro", monospace;
+  text-shadow: 0 0 0 #01090b;
+}
+
+.hero p {
+  font-weight: bold;
 }
 
 .nav ul {
