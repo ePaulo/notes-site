@@ -146,7 +146,7 @@ a:hover {
   opacity: .5;
 }
 
-#accordion #accordion-name {
+.accordion .accordion-name {
   background-color: #eee;
   cursor: pointer;
   border: none;
@@ -156,11 +156,11 @@ a:hover {
   border-bottom: 1px solid #b5c8cc;
 }
 
-.active, #accordion #accordion-name:hover {
+.active, .accordion .accordion-name:hover {
   background-color: #ccc; 
 }
 
-#accordion #inner-accordion-content {
+.accordion .inner-accordion-content {
   display: none;
   background-color: #eee;
   overflow: hidden;
