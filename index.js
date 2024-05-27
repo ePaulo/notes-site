@@ -94,5 +94,5 @@ for (let i = 0; i < accordionContainer.length; i++){
 };
 
 for (let i = 0; i < firstAccordionEl.length; i++) {
-    accordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-up"></i>`;
+    firstAccordionEl.accordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-up"></i>`;
 }
