@@ -71,20 +71,16 @@ function switchTitle(text) {
 }
 
 /**Accordion */
-let acc = document.querySelectorAll(".accordion h3");
-
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+let accordionContainer = document.getElementsByClassName("accordion");
+let accordionName = document.getElementById("accordion-name");
+for (let i = 0; i < accordionContainer.length; i++){
+  accordionName.addEventListener("click", function() {
+    let accordionContent = document.getElementById("inner-accordion-content");
     this.classList.toggle("active");
-    let panel = document.querySelectorAll(".accordion .inner-accordion-content");
-    if (panel.style.display === "block") {
-        console.log(acc);
-        console.log(panel);
-      panel.style.display = "none";
+    if (accordionContent.style.display === "block") {
+      accordionContent.style.display = "none";
     } else {
-        console.log(acc);
-        console.log(panel);
-      panel.style.display = "block";
+      accordionContent.style.display = "block";
     }
   });
-}
+};

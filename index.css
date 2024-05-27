@@ -146,26 +146,22 @@ a:hover {
   opacity: .5;
 }
 
-.accordion h3 {
+#accordion #accordion-name {
   background-color: #eee;
-  color: #444;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
   transition: 0.4s;
+  border-bottom: 1px solid #b5c8cc;
 }
 
-.active, .accordion h3:hover {
+.active, #accordion #accordion-name:hover {
   background-color: #ccc; 
 }
 
-.accordion .inner-accordion-content {
-  padding: 0 18px;
+#accordion #inner-accordion-content {
   display: none;
-  background-color: white;
+  background-color: #eee;
   overflow: hidden;
 }
