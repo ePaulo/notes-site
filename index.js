@@ -69,3 +69,18 @@ miscSubjectBtn.addEventListener("click", function(){
 function switchTitle(text) {
     currentSubjectEl.textContent = text.textContent;
 }
+
+/**Accordion */
+let acc = document.querySelectorAll(".accordion h3");
+
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = document.querySelectorAll(".accordion .inner-accordion-content");
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}

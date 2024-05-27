@@ -13,11 +13,11 @@ h1 {
   background-color: #eee;
   border-bottom: 5px solid #33bb33;
   padding: 20px;
-  color: #eee;
+  color: #01090b;
   text-align: center;
   background-image: url("https://as2.ftcdn.net/v2/jpg/02/18/72/63/1000_F_218726328_JPGdhYAJmplB8gNbLEZUoyWD9oawokWy.jpg");
   font-family: "Source Code Pro", monospace;
-  text-shadow: 0 0 0 #01090b;
+  text-shadow: 0 0 5px #000;
 }
 
 .hero p {
@@ -52,9 +52,10 @@ h1 {
 }
 
 .page {
-  margin: 50px 50px 0px 50px;
+  margin: 50px auto 0px;
   background-color: #eee;
   font-family: "Kalam", cursive;
+  width: 80%;
 }
 
 .content {
@@ -143,4 +144,28 @@ li {
 a:hover {
   transition-duration: .5s;
   opacity: .5;
+}
+
+.accordion h3 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion h3:hover {
+  background-color: #ccc; 
+}
+
+.accordion .inner-accordion-content {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }

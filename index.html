@@ -38,48 +38,98 @@
                     <h2>HTML</h2>
                     <p>Hypertext Markup Language</p>
                     <p>Used for standard document design in websites</p>
-                    <h3>Notes</h3>
-                    <ul>
-                        <li>Add <code><title></title></code> Tags - say why</li>
-                        <li>Add <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang"
-                                target="_blank" alt="documentation on the lang attribute">html lang attribute</a> to
-                            your header <code><html lang="en"></code> - sets the language of the content on the page
-                        </li>
-                        <li>Fallowing heading structure h1 > h2 > h3 is good for Accessibility</li>
-                        <li>Can drag and drop HTML file into browser and it will show content</li>
-                        <li>Elements without closing tags can be "closed" by ending it in /</li>
-                        <li>width is an attribute that can be added outside of the style attribute - not valid HTML</li>
-                        <li>div is short for divider</li>
-                        <li>alt + shft + F organizes code indents</li>
-                        <li>HTML Document Tree</li>
-                        <li>Src-set helps render different images per browser size</li>
-                        <li>input has type attributes checkbox, color, date, text, password, time, file ect</li>
-                        <li>input has a placeholder attribute</li>
-                        <li>Head holds metadata - styles, titles, scripts</li>
-                        <li>link rel="stylesheet" href="styles.css" - link to external css file - goes in head</li>
-                        <li>Metadata controls what is seen when a user shares the link</li>
-                        <li>Head holds the tags you see on the page</li>
-                        <li>!doctype html specifies html version (html 5)</li>
-                        <li>dl, description list, used as a contianer for a list of terms, encloses a list of groups of
-                            terms, commonly used to implement a glossory or display metadata (as key-value pairs)</li>
-                      <li class="sub-list"><span>Why write Alt Text</span>
-                            <ul>
-                                <li>Makes site more accessible</li>
-                                <li>Fallback incase image doesn't load</li>
-                                <li>Helps site rank higher on google</li>
-                            </ul>
-                        </li>
-                      <li class="sub-list"><span>Rules to writing alt text</span>
-                            <ul>
-                                <li>don't use "image of"</li>
-                                <li>Be concise (less than 125 characters) - a lot of screen readers will cut off after 125
-                                        characters</li>
-                                <li>How would you describe it over the phone</li>
-                            </ul>
-                        </li>
-                        <li>ctrl + d = highlights all similar text, changes appropriate text</li>
-
-                    </ul>
+                    <div class="accordion">
+                        <h3>Notes</h3>
+                        <ul class="inner-accordion-content">
+                            <li>Add <code><title></title></code> Tags - say why</li>
+                            <li>Add <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang"
+                                    target="_blank" alt="documentation on the lang attribute">html lang attribute</a> to
+                                your header <code><html lang="en"></code> - sets the language of the content on the page
+                            </li>
+                            <li>Fallowing heading structure h1 > h2 > h3 is good for Accessibility</li>
+                            <li>Can drag and drop HTML file into browser and it will show content</li>
+                            <li>Elements without closing tags can be "closed" by ending it in /</li>
+                            <li>width is an attribute that can be added outside of the style attribute - not valid HTML</li>
+                            <li>div is short for divider</li>
+                            <li>alt + shft + F organizes code indents</li>
+                            <li>HTML Document Tree</li>
+                            <li>Src-set helps render different images per browser size</li>
+                            <li>input has type attributes checkbox, color, date, text, password, time, file ect</li>
+                            <li>input has a placeholder attribute</li>
+                            <li>Head holds metadata - styles, titles, scripts</li>
+                            <li>link rel="stylesheet" href="styles.css" - link to external css file - goes in head</li>
+                            <li>Metadata controls what is seen when a user shares the link</li>
+                            <li>Head holds the tags you see on the page</li>
+                            <li>!doctype html specifies html version (html 5)</li>
+                            <li>dl, description list, used as a contianer for a list of terms, encloses a list of groups of
+                                terms, commonly used to implement a glossory or display metadata (as key-value pairs)</li>
+                            <li class="sub-list"><span>Why write Alt Text</span>
+                                <ul>
+                                    <li>Makes site more accessible</li>
+                                    <li>Fallback incase image doesn't load</li>
+                                    <li>Helps site rank higher on google</li>
+                                </ul>
+                            </li>
+                            <li class="sub-list"><span>Rules to writing alt text</span>
+                                <ul>
+                                    <li>don't use "image of"</li>
+                                    <li>Be concise (less than 125 characters) - a lot of screen readers will cut off after 125
+                                            characters</li>
+                                    <li>How would you describe it over the phone</li>
+                                </ul>
+                            </li>
+                            <li>ctrl + d = highlights all similar text, changes appropriate text</li>
+                        </ul>
+                    </div>
+                    <div class="accordion">
+                        <h3>Resources</h3>
+                        <dl class="inner-accordion-content">
+                            <dt><a href="https://app.netlify.com/" target="_blank"
+                                    alt="goes to the netlify site which is used to deploy personal code">Netlify</a></dt>
+                            <dd>deploys a version of your code to a site for free</dd>
+                        </dl>
+                    </div>
+                    <div class="accordion">
+                        <h3>Definitions</h3>
+                        <dl class="inner-accordion-content">
+                            <dt>ol</dt>
+                            <dd>ordered list</dd>
+                            <dt>ul</dt>
+                            <dd>unordered list</dd>
+                            <dt>li</dt>
+                            <dd>list item</dd>
+                            <dt>dl</dt>
+                            <dd>description list</dd>
+                            <dd>the parent element that encloses the list of terms and descriptions</dd>
+                            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl"
+                                    target="_blank">dt</a></dt>
+                            <dd>description term</dd>
+                            <dd>the child element that specifies a term in a description list, must be used inside dl</dd>
+                            <dt>dd</dt>
+                            <dd>description details</dd>
+                            <dd>the child element that provides the description, definition, or value for the proceding (dt)
+                                term in a dl</dd>
+                            <dt>Web Standards</dt>
+                            <dd>Guidlines and practices for the creation and delivery of content on the www.</dd>
+                            <dd>These standards are crucial for ensuring web content is accessible, reliable, and
+                                compatable, across different devices and platforms.</dd>
+                            <dd>The primary organization responsible for web standards is the world wide web consortium
+                                (w3c).</dd>
+                            <dt>Core HTML Tags</dt>
+                            <dd>Heading, h1, p, ext (google)</dd>
+                            <dt>Nesting</dt>
+                            <dd>tags inside other tags (ul, li) creating the tree structure of html tags</dd>
+                            <dt>Document Structure</dt>
+                            <dd>the pattern the HTML document should follow (html, head, body) ext (google) </dd>
+                        </dl>
+                    </div>
+                    <div class="accordion">
+                        <h3>Questions</h3>
+                        <ul class="inner-accordion-content">
+                            <li>Why is it target="_blank"?</li>
+                            <li>what does rel mean</li>
+                        </ul>
+                    </div>
                 </section>
                 <section id="css-section" hidden>
                     <h2>CSS</h2>
@@ -91,35 +141,141 @@
                         <li>Variables</li>
                         <li>Fonts</li>
                     </ul>
-                    <h3>Notes</h3>
-                    <ul>
-                        <li>font-weight: lighter, normal, or bold</li>
-                        <li>display: inline; stacks items beside eachother horizontally</li>
-                        <li>display: block; stacks items on top of eachother vertically, each item takes up full width
-                        </li>
-                        <li>browser assumes body tag wants margin around</li>
-                        <li>margin will collapse into eachother, largest margin will take presidence</li>
-                        <li>center an element: display: block; set width, set margin left/right to auto</li>
-                        <li>Use line-height instead of height for input fields - more browsers will honor it</li>
-                        <li class="sub-list"><span><a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_blank"
-                                alt="brings user to bootstraps documentation on how to use flexbox">Flexbox</a> is god.</span>
-                            <ul>
-                                <li>display-content: center, end, start, space-around, space-between</li>
-                                <li>gap: px</li>
-                                <li>only affects direct children (if you don't want something effected, change it to be
-                                    within divs).</li>
-                        </li>
-                        <li>Divs are dispaly block by default</li>
-                        <li>Don't use pure black or pure white because it will block/show all light emitted from the
-                            screen, making it difficult for your viewers.</li>
-                        <li>background-size: cover (background is the width of the container), (google)</li>
-                        <li>buttons don't inherit font-family (use font-family: inherit;)</li>
-                        <li>the span tag is display: inline;</li>
-                        <li>Use id for unique elements that will only be used once</li>
-                        <li>Use classes for elements that will be reused</li>
-                        <li>.webp is similar to .gif, but is more compressed</li>
-                        <li>text-shadow: horizontal-line vertical-line blur color;</li>
-                    </ul>
+                    <div class="accordion">
+                        <h3>Notes</h3>
+                        <ul class="inner-accordion-content">
+                            <li>font-weight: lighter, normal, or bold</li>
+                            <li>display: inline; stacks items beside eachother horizontally</li>
+                            <li>display: block; stacks items on top of eachother vertically, each item takes up full width
+                            </li>
+                            <li>browser assumes body tag wants margin around</li>
+                            <li>margin will collapse into eachother, largest margin will take presidence</li>
+                            <li>center an element: display: block; set width, set margin left/right to auto</li>
+                            <li>Use line-height instead of height for input fields - more browsers will honor it</li>
+                            <li class="sub-list"><span><a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_blank"
+                                    alt="brings user to bootstraps documentation on how to use flexbox">Flexbox</a> is god.</span>
+                                <ul>
+                                    <li>display-content: center, end, start, space-around, space-between</li>
+                                    <li>gap: px</li>
+                                    <li>only affects direct children (if you don't want something effected, change it to be
+                                        within divs).</li>
+                                </ul>
+                            </li>
+                            <li>Divs are dispaly block by default</li>
+                            <li>Don't use pure black or pure white because it will block/show all light emitted from the
+                                screen, making it difficult for your viewers.</li>
+                            <li>background-size: cover (background is the width of the container), (google)</li>
+                            <li>buttons don't inherit font-family (use font-family: inherit;)</li>
+                            <li>the span tag is display: inline;</li>
+                            <li>Use id for unique elements that will only be used once</li>
+                            <li>Use classes for elements that will be reused</li>
+                            <li>.webp is similar to .gif, but is more compressed</li>
+                            <li>text-shadow: horizontal-line vertical-line blur color;</li>
+                        </ul>
+                    </div>
+                    <div class="accordion">
+                        <h3>Resources</h3>
+                        <dl class="inner-accordion-content">
+                            <dt><a href="https://userway.org/contrast/?fg=f8f9fa&bg=ffffff" target="_blank"
+                                    alt="goes to the userway site, which is a contrast checker for accessibility">User
+                                    Way</a></dt>
+                            <dd>Checks the contrast of two colors to see if it's accessible</dd>
+                            <dt><a href="https://coolors.co/" target="_blank"
+                                    alt="coolors, the super fast color generator">Coolors</a></dt>
+                            <dd>Generates random colors and pallets for designers</dd>
+                            <dd>Has a tool that can choose colors from an image</dd>
+                            <dt><a href="unsplash.com" target="_blank" alt="Free to use images">Unsplash</a></dt>
+                            <dd>The internets source of freely-usable images.</dd>
+                            <dt><a href="https://fonts.google.com/" target="_blank"
+                                    alt="a bunch of fonts supported by Google">Google Fonts</a></dt>
+                            <dd>A bunch of fonts supported by google</dd>
+                            <dd>Place link text in head of HTML</dd>
+                            <dd>Add font family to CSS</dd>
+                            <dt><a href="https://www.1001fonts.com/" target="_blank" alt="a bunch of free fonts">1001
+                                    Fonts</a></dt>
+                            <dd>A bunch of free fonts</dd>
+                            <dd>Find desired font -> download -> use .ttf file -> add CSS (@font-face {src:
+                                url(filename.ttf); font-family: fontname;})</dd>
+                            <dd>Comes with a cost -> website has to load the resources -> slows down site speed</dd>
+                            <dd>limit yourself to two or three fonts per page</dd>
+                            <dd>Use fonts with multiple weights or styles to get more versitality without needing extra
+                                fonts</dd>
+                            <dt><a href="https://giphy.com/" target="_blank" alt="a bunch of gifs">Giphy</a></dt>
+                            <dd>a bunch of gifs for use</dd>
+                        </dl>    
+                    </div>
+                    <div class="accordion">
+                        <h3>Definitions</h3>
+                        <dl class="inner-accordion-content">
+                            <dt>CSS Syntax</dt>
+                            <dd>The way we write css code</dd>
+                            <dd>Selector {Property: Value};</dd>
+                            <dt>px</dt>
+                            <dd>Pixel</dd>
+                            <dd>The smallest unit of space that our screens can rendor</dd>
+                            <dt>Auto</dt>
+                            <dd>automatically adjusted</dd>
+                            <dd>used for margin, if size is not declaired it will not work</dd>
+                            <dd>takes up all available space</dd>
+                            <dt>The Box Model</dt>
+                            <dd><img src="https://www.atatus.com/blog/content/images/2022/07/padding.png" alt="image displaying the box model margin, border, padding, and content" width="100%" />
+                            </dd>
+                            <dd>Margin, border, padding, content</dd>
+                            <dt>Relative Path Syntax</dt>
+                            <dd>an address that points to the current directory or project folder</dd>
+                            <dd>./ -> start from the same directory the current file is in - more explicit - visual
+                                reminder your referencing a file within the project</dd>
+                            <dd>../ -> start from the parent directory of (the directory above) the current file</dd>
+                            <dd>/ -> start from the project's root directory</dd>
+                            <dt>Utility Class</dt>
+                            <dd>A class for a single css property</dd>
+                            <dd>.italic{font-style: italic;}</dd>
+                            <dt>CSS Inheritance</dt>
+                            <dd>controls what happens when no value is specified for a property on an element</dd>
+                            <dd>Learn to write DRYer (don't repeat yourself) code, fewer bugs, be more efficient</dd>
+                            <dd>41 css properties that are inherited (google it)</dd>
+                            <dt>Web Safe Font</dt>
+                            <dd>a font that's preinstalled in the browser</dd>
+                            <dd>Web safe Fonts List
+                                <ul>
+                                    <li>Arial (sans-serif)</li>
+                                    <li>Verdana (sans-serif)</li>
+                                    <li>Tahoma (sans-serif)</li>
+                                    <li>Trebuchet MS (sans-serif)</li>
+                                    <li>Times New Roman (serif)</li>
+                                    <li>Georgia (serif)</li>
+                                    <li>Garamond (serif)</li>
+                                    <li>Courier New (monospace)</li>
+                                    <li>Brush Script MT (cursive)</li>
+                                </ul>
+                            </dd>
+                            <dt>Font Stack</dt>
+                            <dd>a list of fonts and font keywords used to let a browser know our preferred and fallback
+                                fonts</dd>
+                            <dd>font-family: Verdana, Geneva, Tahoma, sans-serif;</dd>
+                            <dd>Sans Serif is a font category, sans means without or not</dd>
+                            <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element" target="_blank"
+                                    alt="documentation on replaced elements">Replaced Elements</a></dt>
+                            <dd>An elements whos representation is outside the scope of CSS</dd>
+                            <dd>Element is not rendered directly by the browser but an external process</dd>
+                            <dd>The content of the replaced element is external to the HTML document</dd>
+                        </dl>
+                    </div>
+                    <div class="accordion">
+                        <h3>Questions</h3>
+                        <ul class="inner-accordion-content">
+                            <li>Why do people use even numbers for px in css? -- because they are easier to divide if you
+                                need to output different sized icons (???)</li>
+                            <li>Is it better to do /folder/file or folder/file?
+                                <ul>
+                                    <li>/folder/file = file is located in the folder at the root of the current web page
+                                    </li>
+                                    <li>folder/file = image is located in the folder in the current folder</li>
+                                    <li>../file = file is located in the folder one level up from the curent folder</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
                 <section id="js-section" hidden>
                     <h2>JavaScript</h2>
@@ -131,7 +287,7 @@
                     </ul>
                     <div class="accordion">
                         <h3>Notes</h3>
-                        <ul>
+                        <ul class="inner-accordion-content">
                             <li></li>
                             <li></li>
                         </ul>
@@ -148,7 +304,7 @@
                     </ul>
                     <div class="accordion">
                         <h3>Notes</h3>
-                        <ul>
+                        <ul class="inner-accordion-content">
                             <li></li>
                             <li></li>
                         </ul>
@@ -158,7 +314,7 @@
                     <h2>MISC</h2>
                     <div class="accordion">
                         <h3>Notes</h3>
-                        <ul>
+                        <ul class="inner-accordion-content">
                             <li>Client requests to see site --> server sends client's device HTML, CSS, JS, Assets, Fonts
                                 (some websites won't send fonts, because they're using a web-safe font)</li>
                             <li>Git VS Github
@@ -174,177 +330,23 @@
                             </li>
                         </ul>
                     </div>
-                </section>
-                <section id="questions-section" style="display: none;">
-                    <h2>QUESTIONS</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <h3>HTML</h3>
-                    <ul>
-                        <li>Why is it target="_blank"?</li>
-                        <li>what does rel mean</li>
-                    </ul>
-                    <h3>CSS</h3>
-                    <ul>
-                        <li>Why do people use even numbers for px in css? -- because they are easier to divide if you
-                            need to output different sized icons (???)</li>
-                        <li>Is it better to do /folder/file or folder/file?
-                            <ul>
-                                <li>/folder/file = file is located in the folder at the root of the current web page
-                                </li>
-                                <li>folder/file = image is located in the folder in the current folder</li>
-                                <li>../file = file is located in the folder one level up from the curent folder</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-                <section id="dictionary-section" style="display: none;">
-                    <h2>DICTIONARY</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <h3>HTML</h3>
-                    <dl>
-                        <dt>ol</dt>
-                        <dd>ordered list</dd>
-                        <dt>ul</dt>
-                        <dd>unordered list</dd>
-                        <dt>li</dt>
-                        <dd>list item</dd>
-                        <dt>dl</dt>
-                        <dd>description list</dd>
-                        <dd>the parent element that encloses the list of terms and descriptions</dd>
-                        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl"
-                                target="_blank">dt</a></dt>
-                        <dd>description term</dd>
-                        <dd>the child element that specifies a term in a description list, must be used inside dl</dd>
-                        <dt>dd</dt>
-                        <dd>description details</dd>
-                        <dd>the child element that provides the description, definition, or value for the proceding (dt)
-                            term in a dl</dd>
-                        <dt>Web Standards</dt>
-                        <dd>Guidlines and practices for the creation and delivery of content on the www.</dd>
-                        <dd>These standards are crucial for ensuring web content is accessible, reliable, and
-                            compatable, across different devices and platforms.</dd>
-                        <dd>The primary organization responsible for web standards is the world wide web consortium
-                            (w3c).</dd>
-                        <dt>Core HTML Tags</dt>
-                        <dd>Heading, h1, p, ext (google)</dd>
-                        <dt>Nesting</dt>
-                        <dd>tags inside other tags (ul, li) creating the tree structure of html tags</dd>
-                        <dt>Document Structure</dt>
-                        <dd>the pattern the HTML document should follow (html, head, body) ext (google) </dd>
-                    </dl>
-                    <h3>CSS</h3>
-                    <dl>
-                        <dt>CSS Syntax</dt>
-                        <dd>The way we write css code</dd>
-                        <dd>Selector {Property: Value};</dd>
-                        <dt>px</dt>
-                        <dd>Pixel</dd>
-                        <dd>The smallest unit of space that our screens can rendor</dd>
-                        <dt>Auto</dt>
-                        <dd>automatically adjusted</dd>
-                        <dd>used for margin, if size is not declaired it will not work</dd>
-                        <dd>takes up all available space</dd>
-                        <dt>The Box Model</dt>
-                        <dd><img src="https://www.atatus.com/blog/content/images/2022/07/padding.png" alt="image displaying the box model margin, border, padding, and content" width="100%" />
-                        </dd>
-                        <dd>Margin, border, padding, content</dd>
-                        <dt>Relative Path Syntax</dt>
-                        <dd>an address that points to the current directory or project folder</dd>
-                        <dd>./ --> start from the same directory the current file is in - more explicit - visual
-                            reminder your referencing a file within the project</dd>
-                        <dd>../ --> start from the parent directory of (the directory above) the current file</dd>
-                        <dd>/ --> start from the project's root directory</dd>
-                        <dt>Utility Class</dt>
-                        <dd>A class for a single css property</dd>
-                        <dd>.italic{font-style: italic;}</dd>
-                        <dt>CSS Inheritance</dt>
-                        <dd>controls what happens when no value is specified for a property on an element</dd>
-                        <dd>Learn to write DRYer (don't repeat yourself) code, fewer bugs, be more efficient</dd>
-                        <dd>41 css properties that are inherited (google it)</dd>
-                        <dt>Web Safe Font</dt>
-                        <dd>a font that's preinstalled in the browser</dd>
-                        <dd>Web safe Fonts List
-                            <ul>
-                                <li>Arial (sans-serif)</li>
-                                <li>Verdana (sans-serif)</li>
-                                <li>Tahoma (sans-serif)</li>
-                                <li>Trebuchet MS (sans-serif)</li>
-                                <li>Times New Roman (serif)</li>
-                                <li>Georgia (serif)</li>
-                                <li>Garamond (serif)</li>
-                                <li>Courier New (monospace)</li>
-                                <li>Brush Script MT (cursive)</li>
-                            </ul>
-                        </dd>
-                        <dt>Font Stack</dt>
-                        <dd>a list of fonts and font keywords used to let a browser know our preferred and fallback
-                            fonts</dd>
-                        <dd>font-family: Verdana, Geneva, Tahoma, sans-serif;</dd>
-                        <dd>Sans Serif is a font category, sans means without or not</dd>
-                        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element" target="_blank"
-                                alt="documentation on replaced elements">Replaced Elements</a></dt>
-                        <dd>An elements whos representation is outside the scope of CSS</dd>
-                        <dd>Element is not rendered directly by the browser but an external process</dd>
-                        <dd>The content of the replaced element is external to the HTML document</dd>
-                    </dl>
-                    <h3>General</h3>
-                    <dl>
-                        <dt>Version Control with Git</dt>
-                        <dd>Creats "save points" (commits) in your code that you can revert back to if needed.</dd>
-                        <dd>Manages changes by "merging" multiple different versions (branches) of the same code base.
-                        </dd>
-                        <dd>Generally allows you to be less worried about making mistakes or having your code conflict
-                            with other people working on the same project.</dd>
-                        <dt>Github</dt>
-                        <dd>A cloud based SaaS product, now owned by Microsoft.</dd>
-                        <dd>Used for sharing your code with others.</dd>
-                        <dd>Assumes the usage of the Git Version Control System</dd>
-                        <dd>Has many Git-based capabilities built into it. (commiting, merging, branches, ect)</dd>
-                    </dl>
-                </section>
-                <section class="resources-section" style="display: none;">
-                    <h2>RESOURCES</h2>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <h3>HTML</h3>
-                    <dl>
-                        <dt><a href="https://app.netlify.com/" target="_blank"
-                                alt="goes to the netlify site which is used to deploy personal code">Netlify</a></dt>
-                        <dd>deploys a version of your code to a site for free</dd>
-                    </dl>
-                    <h3>CSS</h3>
-                    <dl>
-                        <dt><a href="https://userway.org/contrast/?fg=f8f9fa&bg=ffffff" target="_blank"
-                                alt="goes to the userway site, which is a contrast checker for accessibility">User
-                                Way</a></dt>
-                        <dd>Checks the contrast of two colors to see if it's accessible</dd>
-                        <dt><a href="https://coolors.co/" target="_blank"
-                                alt="coolors, the super fast color generator">Coolors</a></dt>
-                        <dd>Generates random colors and pallets for designers</dd>
-                        <dd>Has a tool that can choose colors from an image</dd>
-                        <dt><a href="unsplash.com" target="_blank" alt="Free to use images">Unsplash</a></dt>
-                        <dd>The internets source of freely-usable images.</dd>
-                        <dt><a href="https://fonts.google.com/" target="_blank"
-                                alt="a bunch of fonts supported by Google">Google Fonts</a></dt>
-                        <dd>A bunch of fonts supported by google</dd>
-                        <dd>Place link text in head of HTML</dd>
-                        <dd>Add font family to CSS</dd>
-                        <dt><a href="https://www.1001fonts.com/" target="_blank" alt="a bunch of free fonts">1001
-                                Fonts</a></dt>
-                        <dd>A bunch of free fonts</dd>
-                        <dd>Find desired font --> download --> use .ttf file --> add CSS (@font-face {src:
-                            url(filename.ttf); font-family: fontname;})</dd>
-                        <dd>Comes with a cost --> website has to load the resources --> slows down site speed</dd>
-                        <dd>limit yourself to two or three fonts per page</dd>
-                        <dd>Use fonts with multiple weights or styles to get more versitality without needing extra
-                            fonts</dd>
-                        <dt><a href="https://giphy.com/" target="_blank" alt="a bunch of gifs">Giphy</a></dt>
-                        <dd>a bunch of gifs for use</dd>
+                    <div class="accordion">
+                        <h3>Definitions</h3>
+                        <dl class="inner-accordion-content">
+                            <dt>Version Control with Git</dt>
+                            <dd>Creats "save points" (commits) in your code that you can revert back to if needed.</dd>
+                            <dd>Manages changes by "merging" multiple different versions (branches) of the same code base.
+                            </dd>
+                            <dd>Generally allows you to be less worried about making mistakes or having your code conflict
+                                with other people working on the same project.</dd>
+                            <dt>Github</dt>
+                            <dd>A cloud based SaaS product, now owned by Microsoft.</dd>
+                            <dd>Used for sharing your code with others.</dd>
+                            <dd>Assumes the usage of the Git Version Control System</dd>
+                            <dd>Has many Git-based capabilities built into it. (commiting, merging, branches, ect)</dd>
+                        </dl>
+                    </section>
+                    </div>
                 </section>
             </div>
         </div>
