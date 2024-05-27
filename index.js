@@ -78,6 +78,7 @@ let accordionArrow = document.getElementsByClassName("accordion-arrow");
 for (let i = 0; i < accordionContainer.length; i++){
   console.log(accordionArrow[i]);
   accordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-down"></i>`;
+  accordionArrow[0].innerHTML = `<i class="fa-solid fa-angle-up"></i>`;
   accordionName[i].addEventListener("click", function() {
     let accordionContent = document.getElementsByClassName("inner-accordion-content");
     accordionName[i].classList.toggle("active");
