@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #faedcd;
+  background: #010103;
   color: #555;
   margin: 0;
+  line-height: 34px;
 }
 
 h1 {
@@ -10,48 +10,132 @@ h1 {
 }
 
 .hero {
-  background-color: #fefae0;
-  border-bottom: 5px solid #d4a373;
+  background-color: #eee;
+  border-bottom: 5px solid #55df5a;
   padding: 20px;
-  color: #d4a373;
+  color: #eee;
   text-align: center;
+  background-image: url("https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_1280.jpg");
+  font-family: "Source Code Pro", monospace;
 }
 
 .nav ul {
   list-style: none;
   padding-left: 0;
   display: flex;
-  justify-content: space-around;
-  border-bottom: 2px solid #494b52;
+  justify-content: center;
+  border-bottom: 2px solid #c68080;
   margin-top: 0;
-  margin-right: 70px;
-  width: 80%;
+  width: 100%;
   float: right;
+  padding: 40px 0;
+}
+.nav ul li {
+  padding: 0px 20px;
+  color: #555;
+  border-right: 2px solid #555;
+  font-size: 34px;
 }
 
-.nav ul li {
-  background-color: #e9edc9;
-  padding: 5px 20px;
-  color: #555;
-  border: 2px solid #ccd5ae;
+.nav ul li:hover {
+  cursor: pointer;
+  color: #999;
+}
+
+.nav ul li:last-child {
+  border-right: 0px;
 }
 
 .page {
-  background-image: url('https://cdn.pixabay.com/photo/2016/10/23/15/47/paper-1763262_640.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   margin: 50px 50px 0px 50px;
-  padding: 90px 50px 0px 50px;
-  height: 1200px;
+  background-color: #eee;
+  font-family: "Kalam", cursive;
 }
 
 .content {
-  width: 80%;
-  display: flex;
-  justify-content: end;
-  margin: 80px 0 0 130px;
-  padding: 0px 50px 50px 50px;
-  line-height: 30px;
-  height: 1000px;
-  overflow-y: scroll;
+  margin: 20px 20px 20px 150px;
+  padding: 2px 0px 34px 0px;
+  border-left: 2px solid #c68080;
+}
+
+.content h2,
+.content h3,
+.content p,
+.content li {
+  border-bottom: 1px solid #b5c8cc;
+  margin: 0;
+}
+
+.content ul {
+  margin: 0;
+}
+
+.content li ul {
+  border-bottom: 0;
+}
+
+.content li ul li:last-child {
+  border-bottom: 0;
+}
+
+.content ul li.sub-list {
+  padding-left: 0;
+}
+
+.content ul li.sub-list:before {
+  content: "";
+}
+
+.content ul li.sub-list span {
+  padding-left: 80px;
+}
+
+.content ul li.sub-list span:before {
+  content: "- ";
+}
+
+.content ul li.sub-list ul li {
+  padding-left: 120px;
+}
+
+.content li ul li:first-child {
+  border-top: 1px solid #b5c8cc;
+}
+
+.content h2 {
+  padding-left: 20px;
+  font-size: 26px;
+}
+
+.content h3 {
+  padding-left: 40px;
+  font-size: 22px;
+}
+
+.content p {
+  padding-left: 60px;
+}
+
+.content ul,
+.content ul li ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.content ul li {
+  padding-left: 80px;
+}
+
+.content ul li:before {
+  content: "- ";
+}
+
+p,
+li {
+  font-size: 20px;
+}
+
+a:hover {
+  transition-duration: .5s;
+  opacity: .5;
 }

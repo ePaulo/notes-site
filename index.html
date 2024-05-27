@@ -4,15 +4,22 @@
 <head>
     <title>Study Notes</title>
     <link rel="stylesheet" href="/index.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&family=Just+Another+Hand&family=Kalam:wght@300;400;700&family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&family=Just+Another+Hand&family=Kalam:wght@300;400;700&family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="hero">
-            <h1>Study Notes</h1>
+            <h1>Coding Notes</h1>
             <h1 id="current-subject"></h1>
             <p>By Rae</p>
-            <p>Cogito, ergo, sum</p>
         </div>
     </header>
     <main>
@@ -27,25 +34,6 @@
                 </ul>
             </div>
             <div class="content">
-                <section id="misc-section" hidden>
-                    <h2>MISC</h2>
-                    <h3>Basics</h3>
-                    <ul>
-                        <li>Client requests to see site --> server sends client's device HTML, CSS, JS, Assets, Fonts
-                            (some websites won't send fonts, because they're using a web-safe font)</li>
-                        <li>Git VS Github
-                            <ul>
-                                <li>Git - Version control system</li>
-                                <li>Git - Runs locally on your own machine</li>
-                                <li>Git - Helps keep a history of changes you've made to your project</li>
-                                <li>Github - Online platform that stores git repositories (folder of code your tracking
-                                    changes of)</li>
-                                <li>Github - Runs online in cloud</li>
-                                <li>Github - Helps share your code (and history of changes) with others</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
                 <section id="html-section" hidden>
                     <h2>HTML</h2>
                     <p>Hypertext Markup Language</p>
@@ -77,17 +65,17 @@
                         <li>!doctype html specifies html version (html 5)</li>
                         <li>dl, description list, used as a contianer for a list of terms, encloses a list of groups of
                             terms, commonly used to implement a glossory or display metadata (as key-value pairs)</li>
-                        <li>Why write Alt Text
+                      <li class="sub-list"><span>Why write Alt Text</span>
                             <ul>
                                 <li>Makes site more accessible</li>
                                 <li>Fallback incase image doesn't load</li>
                                 <li>Helps site rank higher on google</li>
                             </ul>
                         </li>
-                        <li>Rules to writing alt text
+                      <li class="sub-list"><span>Rules to writing alt text</span>
                             <ul>
                                 <li>don't use "image of"</li>
-                                <li>Be concise (less than 125 characters) - a lot of screen readers will cut off after 125
+                                <li>Be concise (< 125 characters) - a lot of screen readers will cut off after 125
                                         characters</li>
                                 <li>How would you describe it over the phone</li>
                             </ul>
@@ -116,8 +104,8 @@
                         <li>margin will collapse into eachother, largest margin will take presidence</li>
                         <li>center an element: display: block; set width, set margin left/right to auto</li>
                         <li>Use line-height instead of height for input fields - more browsers will honor it</li>
-                        <li><a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_blank"
-                                alt="brings user to bootstraps documentation on how to use flexbox">Flexbox</a> is god.
+                        <li class="sub-list"><span><a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_blank"
+                                alt="brings user to bootstraps documentation on how to use flexbox">Flexbox</a> is god.</span>
                             <ul>
                                 <li>display-content: center, end, start, space-around, space-between</li>
                                 <li>gap: px</li>
@@ -163,6 +151,25 @@
                     <ul>
                         <li></li>
                         <li></li>
+                    </ul>
+                </section>
+                <section id="misc-section" hidden>
+                    <h2>MISC</h2>
+                    <h3>Basics</h3>
+                    <ul>
+                        <li>Client requests to see site --> server sends client's device HTML, CSS, JS, Assets, Fonts
+                            (some websites won't send fonts, because they're using a web-safe font)</li>
+                        <li>Git VS Github
+                            <ul>
+                                <li>Git - Version control system</li>
+                                <li>Git - Runs locally on your own machine</li>
+                                <li>Git - Helps keep a history of changes you've made to your project</li>
+                                <li>Github - Online platform that stores git repositories (folder of code your tracking
+                                    changes of)</li>
+                                <li>Github - Runs online in cloud</li>
+                                <li>Github - Helps share your code (and history of changes) with others</li>
+                            </ul>
+                        </li>
                     </ul>
                 </section>
                 <section id="questions-section" style="display: none;">
