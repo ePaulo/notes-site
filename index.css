@@ -2,40 +2,33 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: #27292c;
     color: white;
-    text-align: center;
+    margin: 0;
 }
 
 h1 {
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
-pre {
-    background-color: #D1D1D0;
-    overflow: auto;
-    font-family: 'Monaco', monospace;
-    padding: 0 1em;
-  }
+.hero {
+    background-color: #6c6c6c;
+    border-bottom: 5px solid #494b52;
+    padding: 20px;
+}
 
+.nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #494b52;
+    margin-top: 0;
+    padding: 5px 0 0 0;
+}
+.nav ul li {
+    background-color: #494b52;
+    padding: 5px 20px;
+}
 
-
-code {
-    font-family: Monaco, monospace;
-    font-size: $base-font-size;
-    line-height: 100%;
-    background-color: #eee;
-    padding: 0.2em;
-    letter-spacing: -0.05em;
-    word-break: normal;
-    /border-radius: 5px;/
-  }
-
-
-
-pre code {
-    border: none;
-    background: none;
-    font-size: $base-font-size * 0.875;
-    line-height: 1em;
-    letter-spacing: normal;
-    word-break: break-all;
-  }
+.page {
+    
+}
