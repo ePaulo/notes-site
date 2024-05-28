@@ -24,13 +24,26 @@ h1 {
 .hero p {
   font-weight: bold;
 }
+.nav {
+    display: flex;
+      border-bottom: 2px solid #c68080;
+}
+.top-logo {
+    width: 175px;
+    border-right: 2px solid #c68080;
+}
 
+.top-logo img {
+    width: 100px;
+    margin: auto;
+    display: block;
+    padding-top: 15px;
+}
 .nav ul {
   list-style: none;
   padding-left: 0;
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #c68080;
   margin-top: 0;
   width: 100%;
   float: right;
@@ -60,8 +73,8 @@ h1 {
 }
 
 .content {
-  margin: 20px 20px 20px 150px;
-  padding: 2px 0px 34px 0px;
+  margin: 0px 20px 20px 150px;
+  padding: 22px 0px 34px 0px;
   border-left: 2px solid #c68080;
 }
 
