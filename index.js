@@ -77,7 +77,6 @@ let accordionArrow = document.getElementsByClassName("accordion-arrow");
 let firstAccordionEl = document.getElementsByClassName("first-accordion");
 
 for (let i = 0; i < accordionContainer.length; i++){
-  console.log(accordionArrow[i]);
   accordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-down"></i>`;
   accordionName[i].addEventListener("click", function() {
     let accordionContent = document.getElementsByClassName("inner-accordion-content");
@@ -92,7 +91,3 @@ for (let i = 0; i < accordionContainer.length; i++){
   });
   
 };
-
-for (let i = 0; i < firstAccordionEl.length; i++) {
-    firstAccordionEl.accordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-up"></i>`;
-}
