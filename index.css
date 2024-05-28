@@ -15,9 +15,10 @@ h1 {
   padding: 20px;
   color: #eee;
   text-align: center;
-  background-image: url("https://as2.ftcdn.net/v2/jpg/02/18/72/63/1000_F_218726328_JPGdhYAJmplB8gNbLEZUoyWD9oawokWy.jpg");
+  background-image: url("./binary-cat.gif");
   font-family: "Source Code Pro", monospace;
   text-shadow: 0 0 5px #000;
+  background-position: 120% 60%;
 }
 
 .hero p {
