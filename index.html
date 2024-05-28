@@ -46,7 +46,7 @@
                     <p>Hypertext Markup Language</p>
                     <p>Used for standard document design in websites</p>
                     <div class="accordion first-accordion">
-                        <h3 class="accordion-name">Notes<span class="accordion-arrow"></span></h3>
+                        <h3 class="accordion-name">Notes<span class="accordion-arrow first-arrow"></span></h3>
                         <ul class="inner-accordion-content" style="display: block;">
                             <li>Add <code><title></title></code> Tags - say why</li>
                             <li>Add <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang"
@@ -149,7 +149,7 @@
                         <li>Fonts</li>
                     </ul>
                     <div class="accordion first-accordion">
-                        <h3 class="accordion-name">Notes<span class="accordion-arrow"></span></h3>
+                        <h3 class="accordion-name">Notes<span class="accordion-arrow first-arrow"></span></h3>
                         <ul class="inner-accordion-content" style="display: block;">
                             <li>font-weight: lighter, normal, or bold</li>
                             <li>display: inline; stacks items beside eachother horizontally</li>
@@ -162,10 +162,12 @@
                             <li class="sub-list"><span><a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_blank"
                                     alt="brings user to bootstraps documentation on how to use flexbox">Flexbox</a> is god.</span>
                                 <ul>
-                                    <li>display-content: center, end, start, space-around, space-between</li>
+                                    <li>display-content: start, center, end, space-around, space-evenly, space-between; controls right to left (main axis)</li>
                                     <li>gap: px</li>
                                     <li>only affects direct children (if you don't want something effected, change it to be
                                         within divs).</li>
+                                    <li>flex-direction: column, row; has default value row, changing to column will switch the align items and display-content axis</li>
+                                    <li>align-items: start, center, end; controls top to bottom (cross axis), has default value stretch</li>
                                 </ul>
                             </li>
                             <li>Divs are dispaly block by default</li>
@@ -178,6 +180,19 @@
                             <li>Use classes for elements that will be reused</li>
                             <li>.webp is similar to .gif, but is more compressed</li>
                             <li>text-shadow: horizontal-line vertical-line blur color;</li>
+                            <li>can't force the width or height of an inline element</li>
+                            <li>divs are display block</li>
+                            <li>WAI-ARIA is used to make background images more accessible. add a role attribute to the section your background-image is on and set it to img. (role="img") then add the aria-label attribute (aria-label="description"). used as a supliment to semantic HTML, not a replacement</li>
+                            <li>em tag adds symantic meaning, screen readers can emphasize</li>
+                            <li>add audio by using audio tag, and controls. you can add an anchor tag between the audio tags as a backup incase the audio fails. put a source tag between the audio tags and add the src attribute in order to have multiple sources. You can also add a type attribute audio/mp3 or audio/wav. Otherwise just add the src attribute to the audio tag. </li>
+                            <li>video is the same as audio. video width and height should always be set to pixels. This saves the required space on the page, without a fixed height and width the layout can change when the file loads.</li>
+                            <li>Video and audio specific attributes: controls, muted, loop, autoplay</li>
+                            <li>HTML tables are for structuring tabular data (informatin presented in a 2d table comprised of rows and columns of cells). Don't use them to create layouts, or literally anything else</li>
+                            <li>thead tbody and tfoot improves accessibility</li> 
+                            <li>colspan attribute determines how many columns table data takes up</li>
+                            <li>rowspan attribute determines how many rows table data takes up</li>
+                            <li>caption tag is the title of a table. should be the first child of the table.</li>
+                            <li>The scope attribute is used to tell screen readers exactly what cells the header is a header for. add next to th</li>
                         </ul>
                     </div>
                     <div class="accordion">
@@ -209,6 +224,8 @@
                                 fonts</dd>
                             <dt><a href="https://giphy.com/" target="_blank" alt="a bunch of gifs">Giphy</a></dt>
                             <dd>a bunch of gifs for use</dd>
+                            <dt><a href="https://www.figma.com/" target="_blank" alt="figma, a site for creating layouts for developers">Figma</a></dt>
+                            <dd>A site for creating layouts for developers</dd>
                         </dl>    
                     </div>
                     <div class="accordion">
@@ -243,7 +260,7 @@
                             <dd>41 css properties that are inherited (google it)</dd>
                             <dt>Web Safe Font</dt>
                             <dd>a font that's preinstalled in the browser</dd>
-                          <dd class="sub-list"><span>Web safe Fonts List</span>
+                            <dd class="sub-list"><span>Web safe Fonts List</span>
                                 <ul>
                                     <li>Arial (sans-serif)</li>
                                     <li>Verdana (sans-serif)</li>
@@ -266,6 +283,25 @@
                             <dd>An elements whos representation is outside the scope of CSS</dd>
                             <dd>Element is not rendered directly by the browser but an external process</dd>
                             <dd>The content of the replaced element is external to the HTML document</dd>
+                            <dt>pseudo-class</dt>
+                            <dd>a selector that selects elements that are in a specific state</dd>
+                            <dd>:hover, :link, :visited, :active</dd>
+                            <dt>specificity</dt>
+                            <dd>The more specific a css selector is, the higher it will be prioritized</dd>
+                            <dd>id selectors are more specific than classes</dd>
+                            <dt>Em tag - emphasis</dt>
+                            <dd>used for words or phrases that would be stressed when spoken</dd>
+                            <dd>important for assistive technologies</dd>
+                            <dd>italic</dd>
+                            <dd>inline element</dd>
+                            <dt>Strong tag</dt>
+                            <dd>bold</dd>
+                            <dd>used for importance seriousness or urgency</dd>
+                            <dd>important for assistive technologies</dd>
+                            <dd>inline element</dd>
+                            <dt>Replaced Element</dt>
+                            <dd>An element whos contents are not affected by CSS</dd>
+                            <dd>iframe, audio, embed, video, img</dd>
                         </dl>
                     </div>
                     <div class="accordion">
@@ -281,6 +317,7 @@
                                     <li>../file = file is located in the folder one level up from the curent folder</li>
                                 </ul>
                             </li>
+                            <li>Should WAI-ARIA be used only for context relevent background images or all?</li>
                         </ul>
                     </div>
                 </section>
@@ -293,11 +330,32 @@
                         <li>Fetch</li>
                     </ul>
                     <div class="accordion first-accordion">
-                        <h3 class="accordion-name">Notes<span class="accordion-arrow"></span></h3>
+                        <h3 class="accordion-name">Notes<span class="accordion-arrow first-arrow"></span></h3>
                         <ul class="inner-accordion-content" style="display: block;">
-                            <li></li>
-                            <li></li>
+                            <li>Script tags in HTML are where you can write JS. add src="filename" to link js file to HTML file.</li>
+                            <li>console.log() to log to console</li>
+                            <li>JS reads top to bottom. Can't access things before they're initialized.</li>
+                            <li>function functionName() {}</li>
+                            <li>function = command</li>
+                            <li>run = call = invoke</li>
+                            <li>++ = self plus one</li>
+                            <li>innerText gets/sets the text inside the element called</li>
                         </ul>
+                    </div>
+                    <div class="accordion">
+                        <h3 class="accordion-name">Resources<span class="accordion-arrow"></span></h3>
+                        <dl class="inner-accordion-content">
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                    <div class="accordion">
+                        <h3 class="accordion-name">Definitions<span class="accordion-arrow"></span></h3>
+                        <dl class="inner-accordion-content">
+                            <dt>DOM</dt>
+                            <dd>Document Object Model</dd>
+                            <dd>How you use JS to control websites</dd>
+                        </dl>
                     </div>
                     <div class="accordion">
                         <h3 class="accordion-name">Questions<span class="accordion-arrow"></span></h3>
@@ -315,7 +373,7 @@
                         <li>JSX</li>
                     </ul>
                     <div class="accordion first-accordion">
-                        <h3 class="accordion-name">Notes<span class="accordion-arrow"></span></h3>
+                        <h3 class="accordion-name">Notes<span class="accordion-arrow first-arrow"></span></h3>
                         <ul class="inner-accordion-content" style="display: block;">
                             <li></li>
                             <li></li>
@@ -325,7 +383,7 @@
                 <section id="misc-section" hidden>
                     <h2>MISC</h2>
                     <div class="accordion first-accordion">
-                        <h3 class="accordion-name">Notes<span class="accordion-arrow"></span></h3>
+                        <h3 class="accordion-name">Notes<span class="accordion-arrow first-arrow"></span></h3>
                         <ul class="inner-accordion-content" style="display: block;">
                             <li>Client requests to see site --> server sends client's device HTML, CSS, JS, Assets, Fonts
                                 (some websites won't send fonts, because they're using a web-safe font)</li>
