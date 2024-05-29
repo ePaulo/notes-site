@@ -5,6 +5,7 @@ const cssSubjectBtn = document.getElementById("css-subject");
 const jsSubjectBtn = document.getElementById("js-subject");
 const firebaseSubjectBtn = document.getElementById("firebase-subject");
 const reactSubjectBtn = document.getElementById("react-subject");
+const codeReviewSubjectBtn = document.getElementById("code-reviews-subject");
 const miscSubjectBtn = document.getElementById("misc-subject");
 
 const htmlSectionEl = document.getElementById("html-section");
@@ -12,6 +13,7 @@ const cssSectionEl = document.getElementById("css-section");
 const jsSectionEl = document.getElementById("js-section");
 const firebaseSectionEl = document.getElementById("firebase-section");
 const reactSectionEl = document.getElementById("react-section");
+const codeReviewSectionEl = document.getElementById("code-review-section");
 const miscSectionEl = document.getElementById("misc-section");
 
 currentSubjectEl.textContent = htmlSubjectBtn.textContent;
@@ -26,6 +28,7 @@ htmlSubjectBtn.addEventListener("click", function(){
     jsSectionEl.hidden = true;
     firebaseSectionEl.hidden = true;
     reactSectionEl.hidden = true;
+    codeReviewSectionEl.hidden = true;
     miscSectionEl.hidden = true;
 });
 
@@ -38,6 +41,7 @@ cssSubjectBtn.addEventListener("click", function(){
     jsSectionEl.hidden = true;
     firebaseSectionEl.hidden = true;
     reactSectionEl.hidden = true;
+    codeReviewSectionEl.hidden = true;
     miscSectionEl.hidden = true;
 });
 
@@ -50,6 +54,7 @@ jsSubjectBtn.addEventListener("click", function(){
     cssSectionEl.hidden = true;
     firebaseSectionEl.hidden = true;
     reactSectionEl.hidden = true;
+    codeReviewSectionEl.hidden = true;
     miscSectionEl.hidden = true;
 });
 
@@ -62,6 +67,7 @@ firebaseSubjectBtn.addEventListener("click", function(){
   cssSectionEl.hidden = true;
   jsSectionEl.hidden = true;
   reactSectionEl.hidden = true;
+  codeReviewSectionEl.hidden = true;
   miscSectionEl.hidden = true;
 });
 
@@ -74,6 +80,20 @@ reactSubjectBtn.addEventListener("click", function(){
     cssSectionEl.hidden = true;
     jsSectionEl.hidden = true;
     firebaseSectionEl.hidden = true;
+    codeReviewSectionEl.hidden = true;
+    miscSectionEl.hidden = true;
+});
+
+codeReviewSubjectBtn.addEventListener("click", function(){
+    switchTitle(codeReviewSubjectBtn);
+
+    codeReviewSectionEl.hidden = false;
+    
+    htmlSectionEl.hidden = true;
+    cssSectionEl.hidden = true;
+    jsSectionEl.hidden = true;
+    firebaseSectionEl.hidden = true;
+    reactSectionEl.hidden = true;
     miscSectionEl.hidden = true;
 });
 
@@ -86,6 +106,7 @@ miscSubjectBtn.addEventListener("click", function(){
     cssSectionEl.hidden = true;
     jsSectionEl.hidden = true;
     firebaseSectionEl.hidden = true;
+    codeReviewSectionEl.hidden = true;
     reactSectionEl.hidden = true;
 });
 
