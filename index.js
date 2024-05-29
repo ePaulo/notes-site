@@ -3,12 +3,14 @@ const currentSubjectEl = document.getElementById("current-subject");
 const htmlSubjectBtn = document.getElementById("html-subject");
 const cssSubjectBtn = document.getElementById("css-subject");
 const jsSubjectBtn = document.getElementById("js-subject");
+const firebaseSubjectBtn = document.getElementById("firebase-subject");
 const reactSubjectBtn = document.getElementById("react-subject");
 const miscSubjectBtn = document.getElementById("misc-subject");
 
 const htmlSectionEl = document.getElementById("html-section");
 const cssSectionEl = document.getElementById("css-section");
 const jsSectionEl = document.getElementById("js-section");
+const firebaseSectionEl = document.getElementById("firebase-section");
 const reactSectionEl = document.getElementById("react-section");
 const miscSectionEl = document.getElementById("misc-section");
 
@@ -22,9 +24,11 @@ htmlSubjectBtn.addEventListener("click", function(){
     
     cssSectionEl.hidden = true;
     jsSectionEl.hidden = true;
+    firebaseSectionEl.hidden = true;
     reactSectionEl.hidden = true;
     miscSectionEl.hidden = true;
 });
+
 cssSubjectBtn.addEventListener("click", function(){
     switchTitle(cssSubjectBtn);
 
@@ -32,9 +36,11 @@ cssSubjectBtn.addEventListener("click", function(){
 
     htmlSectionEl.hidden = true;
     jsSectionEl.hidden = true;
+    firebaseSectionEl.hidden = true;
     reactSectionEl.hidden = true;
     miscSectionEl.hidden = true;
 });
+
 jsSubjectBtn.addEventListener("click", function(){
     switchTitle(jsSubjectBtn);
 
@@ -42,9 +48,23 @@ jsSubjectBtn.addEventListener("click", function(){
     
     htmlSectionEl.hidden = true;
     cssSectionEl.hidden = true;
+    firebaseSectionEl.hidden = true;
     reactSectionEl.hidden = true;
     miscSectionEl.hidden = true;
 });
+
+firebaseSubjectBtn.addEventListener("click", function(){
+  switchTitle(firebaseSubjectBtn);
+
+  firebaseSectionEl.hidden = false;
+  
+  htmlSectionEl.hidden = true;
+  cssSectionEl.hidden = true;
+  jsSectionEl.hidden = true;
+  reactSectionEl.hidden = true;
+  miscSectionEl.hidden = true;
+});
+
 reactSubjectBtn.addEventListener("click", function(){
     switchTitle(reactSubjectBtn);
 
@@ -53,8 +73,10 @@ reactSubjectBtn.addEventListener("click", function(){
     htmlSectionEl.hidden = true;
     cssSectionEl.hidden = true;
     jsSectionEl.hidden = true;
+    firebaseSectionEl.hidden = true;
     miscSectionEl.hidden = true;
 });
+
 miscSubjectBtn.addEventListener("click", function(){
     switchTitle(miscSubjectBtn);
 
@@ -63,6 +85,7 @@ miscSubjectBtn.addEventListener("click", function(){
     htmlSectionEl.hidden = true;
     cssSectionEl.hidden = true;
     jsSectionEl.hidden = true;
+    firebaseSectionEl.hidden = true;
     reactSectionEl.hidden = true;
 });
 
