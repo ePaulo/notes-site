@@ -163,11 +163,13 @@
                                     alt="brings user to bootstraps documentation on how to use flexbox">Flexbox</a> is god.</span>
                                 <ul>
                                     <li>display-content: start, center, end, space-around, space-evenly, space-between; controls right to left (main axis)</li>
-                                    <li>gap: px</li>
+                                    <li>gap: top right bottom left px;</li>
                                     <li>only affects direct children (if you don't want something effected, change it to be
                                         within divs).</li>
                                     <li>flex-direction: column, row; has default value row, changing to column will switch the align items and display-content axis</li>
                                     <li>align-items: start, center, end; controls top to bottom (cross axis), has default value stretch</li>
+                                    <li>flex-wrap: wrap, nowrap, wrap-reverse; keeps the items in the defined max-width and pushes items to a new line.</li>
+                                    <li>flex-grow: 1; used on the child item, will increase the width of the item to the full width.</li>
                                 </ul>
                             </li>
                             <li>Divs are dispaly block by default</li>
@@ -319,6 +321,7 @@
                                 </ul>
                             </li>
                             <li>Should WAI-ARIA be used only for context relevent background images or all?</li>
+                            <li>Is it bad practice to write list-style: none instead of listy-style-type: none to remove bullet points?</li>
                         </ul>
                     </div>
                 </section>
@@ -374,6 +377,11 @@
                             <li>turn an objects values into an array by Object.values(objectName)</li>
                             <li>turn an objects keys into an array by Object.keys(objectName)</li>
                             <li>turn an object into an array of arrays by Object.entries(objectName)</li>
+                            <li>.append(element) adds the element to whatever you're appending to.</li>
+                            <li>element.addEventListener("click"), function() {}</li>
+                            <li>getElementbyID</li>
+                            <li>querySelector</li>
+                            <li>getElementbyClassName</li>
                         </ul>
                     </div>
                     <div class="accordion">
@@ -412,6 +420,13 @@
                             <dt>Method</dt>
                             <dd>access and manipulate the data stored in an object</dd>
                             <dd>written as method()</dd>
+                            <dt>createElement</dt>
+                            <dd>a function that allows you to create an element.</dd>
+                            <dd>a method that needs to be applied to the document object.</dd>
+                            <dd>document.createElement(elementType)</dd>
+                            <dd>Example: document.createElement("li")</dd>
+                            <dt>Template Strings</dt>
+                            <dd>`html stuff and also text and also ${variables}`</dd>
                         </dl>
                     </div>
                     <div class="accordion">
@@ -456,6 +471,7 @@
                             <li>onValue(where you want to fetch the data from (name), function(snapshot){})</li>
                             <li>onValue runs every time there's a change to the database.</li>
                             <li>to change a key or value in the database just click it and edit it.</li>
+                            <li>inmport { remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"</li>
                         </ul>
                     </div>
                     <div class="accordion">
@@ -519,6 +535,7 @@
                                 </ul>
                             </li>
                             <li>It's good practice to pause and refactor your code while working on it, especially when working with other developers.</li>
+                            <li>Write your whys. - Udemi Course - Full Stack Developer - Angela U - The complete 2024 web development bootcamp</li>
                         </ul>
                     </div>
                     <div class="accordion">
@@ -535,6 +552,17 @@
                             <dd>Used for sharing your code with others.</dd>
                             <dd>Assumes the usage of the Git Version Control System</dd>
                             <dd>Has many Git-based capabilities built into it. (commiting, merging, branches, ect)</dd>
+                        </dl>
+                     </div>
+                     <div class="accordion">
+                        <h3 class="accordion-name">Resources<span class="accordion-arrow"></span></h3>
+                        <dl class="inner-accordion-content">
+                            <dt>LinkedIn Learning</dt>
+                            <dd>?? free at library</dd>
+                            <dt>Write your whys</dt>
+                            <dd>Udemi Course</dd>
+                            <dd>Angela U</dd>
+                            <dd>The Complete 2024 Web Development Bootcamp</dd>
                         </dl>
                      </div>
                 </section>
