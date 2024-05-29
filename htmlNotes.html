@@ -174,7 +174,7 @@
                             <li>Don't use pure black or pure white because it will block/show all light emitted from the
                                 screen, making it difficult for your viewers.</li>
                             <li>background-size: cover (background is the width of the container), (google)</li>
-                            <li>buttons and inputs don't inherit font-family (use font-family: inherit;)</li>
+                            <li>buttons don't inherit font-family (use font-family: inherit;)</li>
                             <li>the span tag is display: inline;</li>
                             <li>Use id for unique elements that will only be used once</li>
                             <li>Use classes for elements that will be reused</li>
@@ -193,7 +193,6 @@
                             <li>rowspan attribute determines how many rows table data takes up</li>
                             <li>caption tag is the title of a table. should be the first child of the table.</li>
                             <li>The scope attribute is used to tell screen readers exactly what cells the header is a header for. add next to th</li>
-                            <li>320px is pretty good for almost every mobile device width wise.</li>
                         </ul>
                     </div>
                     <div class="accordion">
@@ -340,40 +339,7 @@
                             <li>function = command</li>
                             <li>run = call = invoke</li>
                             <li>++ = self plus one</li>
-                            <li>innerText gets/sets the text inside the element called. Can't read spaces.</li>
-                            <li>When it's a string VS a number the string always wins.</li>
-                            <li>You can use an escape character (/) to display a " in a string surounded by "".</li>
-                            <li>+= = self plus the oposite of the equal sign.</li>
-                            <li>Name elements you grab elementPurposeEl</li>
-                            <li>let = create the element, it can and will be changed later</li>
-                            <li>const = create the element, it can't be changed later</li>
-                            <li>var can die</li>
-                            <li>textContent = gets/sets the text inside the element called. Can read spaces.</li>
-                            <li>use `` when you need to add variables to text.</li>
-                            <li>You can't use the same name for functions as in an element</li>
-                            <li>to immediately run a function wrap the function in () and end it in (); (function functionName() {})().</li>
-                            <li>using onclick in HTML is less ideal then using addEventListener("click", function() {}). you need to use ; at the end of all code for this to work</li>
-                            <li>Operator precedence is PEMDAS in JS</li>
-                            <li>=== = strictly equal</li>
-                            <li>== = less strict. converts numbers into strings if necessary</li>
-                            <li>= = become</li>
-                            <li>Use hasElementDescription for naming a boolean</li>
-                            <li>an empty string "" is a falsey value.</li>
-                            <li>expressions passed into conditions are translated into booleans</li>
-                            <li>declare = create</li>
-                            <li>querySelector is more dynamic. You have to be more specific and identify the element how you would in CSS.</li>
-                            <li>Arrays are stored in []. they start at 0. To call an array item do arrayName[numberYouWant]. arrayName.length counts normal.
-                                An array is a copmlex data type. arrayName.push(newItem) adds content to the end of an array. arrayName.pop() removes the last item of an array.
-                            </li>
-                            <li>for (let i = 0; i lessthansign maxAmountOfLoop; i++){}</li>
-                            <li>export function(){} exports to another file if you import (import { desiredFunction } from "fileLocation") in that other file.</li>
-                            <li>anytime you use the import or export in JS you have to add type="module" to the HTML JS file reference</li>
-                            <li>Name your function by thinking about what it is doing and what it's doing that to.</li>
-                            <li>If you need a element from function1 use a parameter in function2 and call function2 in function1.</li>
-                            <li>Object --- let objectName = { "key": "value"}</li>
-                            <li>turn an objects values into an array by Object.values(objectName)</li>
-                            <li>turn an objects keys into an array by Object.keys(objectName)</li>
-                            <li>turn an object into an array of arrays by Object.entries(objectName)</li>
+                            <li>innerText gets/sets the text inside the element called</li>
                         </ul>
                     </div>
                     <div class="accordion">
@@ -389,100 +355,14 @@
                             <dt>DOM</dt>
                             <dd>Document Object Model</dd>
                             <dd>How you use JS to control websites</dd>
-                            <dt>Escape Character</dt>
-                            <dd>a character that invokes an alternative interpretation on the following characters in a character sequence</dd>
-                            <dt>Local Dev Environment</dt>
-                            <dd>Text editor - a tool to edit code on your computer</dd>
-                            <dd>Version control - a tool to keep changes updated on Github</dd>
-                            <dd>Escape Characters List:
-                                <ul>
-                                    <li>\t = insert a tab in the text</li>
-                                    <li>\b = insert a backspace in the text</li>
-                                    <li>\n = insert a newline in the text</li>
-                                    <li>\r = insert a carriage in the text</li>
-                                    <li>\f = insert a form feed in the text</li>
-                                    <li>\' = insert a single quote character in the text</li>
-                                    <li>\" = insert a double quote character in the text</li>
-                                    <li>\\ = insert a backslash character in the text</li>
-                                </ul>
-                            </dd>
-                            <dt>Data Type</dt>
-                            <dd>defines the data type that a variable can store</dd>
-                            <dd>Numbers, Strings, Boolean, Bigint, Undefined, Null, Symbol, Object</dd>
-                            <dt>Method</dt>
-                            <dd>access and manipulate the data stored in an object</dd>
-                            <dd>written as method()</dd>
                         </dl>
                     </div>
                     <div class="accordion">
                         <h3 class="accordion-name">Questions<span class="accordion-arrow"></span></h3>
                         <ul class="inner-accordion-content">
                             <li>Why does getElementByClassName return an array</li>
-                            <li>is it better to use "" or '' in js</li>
-                            <li>what does i in the for loop mean?</li>
-                            <li>long but accurate function names, yes or no?</li>
                         </ul>
-                    </div>
-                </section>
-                <section id="js-section" hidden>
-                    <h2>Firebase</h2>
-                    <ul>
-                        <li>Database</li>
-                        <li>Updates in Real Time</li>
-                        <li>Easy to Use</li>
-                    </ul>
-                    <div class="accordion">
-                        <h3 class="accordion-name">Notes<span class="accordion-arrow first-arrow"></span></h3>
-                        <ul class="inner-accordion-content" style="display: block;">
-                            <li>Script tags in HTML are where you can write JS. add src="filename" to link js file to HTML file.</li>
-                            <li>const: appSettings = {databaseURL: "referenceURL"}</li>
-                            <li>import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"</li>
-                            <li>const app = initializeApp(appSettings)</li>
-                            <li>import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"</li>
-                            <li>const database = getDatabase(app)</li>
-                            <li>const name = ref(database, "what the reference should be called")</li>
-                            <li>push(where you want to push it (name), what you want to push)</li>
-                            <li>Security Rules
-                                <ul>
-                                    <li>using test mode allows anyone with the database reference to view edit and delete the data in your database.</li>
-                                    <li>the default for testmode is set to a max of 30 days. (how long test mode lasts)</li>
-                                    <li>to change the max testmode write and read time go to Realtime Database then Rules. If you change them both to true
-                                        anyone will always be able to read or write in the database.
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>To create a section press the plus next to the url and add a key, then press the plus next to your section name.</li>
-                            <li>import { onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"</li>
-                            <li>onValue(where you want to fetch the data from (name), function(snapshot){})</li>
-                            <li>onValue runs every time there's a change to the database.</li>
-                            <li>to change a key or value in the database just click it and edit it.</li>
-                        </ul>
-                    </div>
-                    <div class="accordion">
-                        <h3 class="accordion-name">Resources<span class="accordion-arrow"></span></h3>
-                        <dl class="inner-accordion-content">
-                            <dt><a href="https://console.firebase.google.com/" target="_blank" alt="firebase console">Firebase</a></a></dt>
-                            <dd>Database</dd>
-                            <dt><a href="https://www.epochconverter.com/" target="_blank" alt="epoch converter converts to real time">Epoch Converter</a></dt>
-                            <dd>converts unix epoch time to real time</dd>
-                        </dl>
-                    </div>
-                    <div class="accordion">
-                        <h3 class="accordion-name">Definitions<span class="accordion-arrow"></span></h3>
-                        <dl class="inner-accordion-content">
-                            <dt>Reference</dt>
-                            <dd>Any location inside the database</dd>
-                        </dl>
-                    </div>
-                    <div class="accordion">
-                        <h3 class="accordion-name">Questions<span class="accordion-arrow"></span></h3>
-                        <ul class="inner-accordion-content">
-                            <li>Is innerHTML bad to use?</li>
-                            <li>How come you don't have to import snapshot? or define it?</li>
-                            <li>let arrayName = Object.values(snapshot.val())</li>
-                        </ul>
-                    </div>
-                </section>
+                    </div>                </section>
                 <section id="react-section" hidden>
                     <h2>REACT</h2>
                     <ul>
@@ -507,7 +387,7 @@
                         <ul class="inner-accordion-content" style="display: block;">
                             <li>Client requests to see site --> server sends client's device HTML, CSS, JS, Assets, Fonts
                                 (some websites won't send fonts, because they're using a web-safe font)</li>
-                            <li class="sub-list"><span>Git VS Github</span>
+                          <li class="sub-list"><span>Git VS Github</span>
                                 <ul>
                                     <li>Git - Version control system</li>
                                     <li>Git - Runs locally on your own machine</li>
@@ -518,7 +398,6 @@
                                     <li>Github - Helps share your code (and history of changes) with others</li>
                                 </ul>
                             </li>
-                            <li>It's good practice to pause and refactor your code while working on it, especially when working with other developers.</li>
                         </ul>
                     </div>
                     <div class="accordion">
