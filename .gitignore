@@ -1,0 +1,11 @@
+*.log
+*.log.*
+*.local
+*.local.*
+.vscode/
+.idea/
+logs/
+dist/
+temp/
+node_modules/
+.DS_Store
