@@ -1,13 +1,17 @@
 {
-  "name": "Scrim-s053m4uvg0",
+  "name": "scrimba_notes",
   "description": "https://v2.scrimba.com/s053m4uvg0",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "npx prettier --write ."
   },
   "dependencies": {
+    "prettier": "^3.2.5",
     "vite": "latest"
   },
   "devDependencies": {}

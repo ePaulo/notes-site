@@ -13,14 +13,14 @@ h1 {
 }
 
 .hero {
-  background-image: url("./binary-cat.gif");
+  background-image: url('./binary-cat.gif');
   background-position: 120% 60%;
 
   background-color: #01090b;
   color: #eee;
   text-shadow: 0 0 5px #000;
 
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   text-align: center;
 
   padding: 20px;
@@ -34,7 +34,7 @@ h1 {
 /***LOGO***/
 .top-logo {
   position: absolute;
-  
+
   margin-left: 11%;
 }
 
@@ -90,7 +90,7 @@ h1 {
 /***BODY***/
 .page {
   background-color: #eee;
-  font-family: "Kalam", cursive;
+  font-family: 'Kalam', cursive;
 
   width: 80%;
   margin: 50px auto 0px;
@@ -102,15 +102,19 @@ h1 {
   padding: 22px 0px 34px 0px;
 }
 
-.content h2, .content h3,
-.content p, .content li,
-.content dt, .content dd {
+.content h2,
+.content h3,
+.content p,
+.content li,
+.content dt,
+.content dd {
   margin: 0;
   border-bottom: 1px solid #b5c8cc;
 }
 
 /**LISTS**/
-.content ul, .content dl {
+.content ul,
+.content dl {
   margin: 0;
 }
 
@@ -134,7 +138,7 @@ h1 {
 
 .content ul li.sub-list:before,
 .content dd.sub-list:before {
-  content: "";
+  content: '';
 }
 
 .content ul li.sub-list span {
@@ -147,7 +151,7 @@ h1 {
 
 .content ul li.sub-list span:before,
 .content dd.sub-list span:before {
-  content: "- ";
+  content: '- ';
 }
 
 .content ul li.sub-list ul li,
@@ -181,7 +185,7 @@ h1 {
 
 .content ul li:before,
 .content dd:before {
-  content: "- ";
+  content: '- ';
 }
 
 li {
@@ -209,8 +213,8 @@ p {
 }
 
 a:hover {
-  transition-duration: .5s;
-  opacity: .5;
+  transition-duration: 0.5s;
+  opacity: 0.5;
 }
 
 .accordion {
@@ -234,6 +238,6 @@ a:hover {
 
 .accordion-arrow {
   float: right;
-  
+
   padding-right: 15px;
 }
