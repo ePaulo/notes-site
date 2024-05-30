@@ -53,8 +53,8 @@ miscSubjectBtn.addEventListener('click', () =>
 )
 
 // Functions
-function switchTitle(textBtn, sectionEl) {
-  currentSubjectEl.textContent = textBtn.textContent
+function switchTitle(subjectBtn, sectionEl) {
+  currentSubjectEl.textContent = subjectBtn.textContent
 
   htmlSectionEl.hidden = true
   cssSectionEl.hidden = true
