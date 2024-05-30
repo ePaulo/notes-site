@@ -88,6 +88,13 @@
                                 </ul>
                             </li>
                             <li>ctrl + d = highlights all similar text, changes appropriate text</li>
+                            <li>Setting the Viewport - tells the computer not to shrink the website - meta name="viewport" content="width=device-width, initial-scale=1.0".</li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="_blank" alt="web application manifest documentation">Web Applciation Manifest</a> 
+                                <ul>
+                                    <li>manifest.json - Tells chrome the info it needs to hook program into chrome</li>
+                                    <li>manifest.json - name version icon ect.</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div class="accordion">
@@ -95,41 +102,64 @@
                         <dl class="inner-accordion-content">
                             <dt><a href="https://app.netlify.com/" target="_blank"
                                     alt="goes to the netlify site which is used to deploy personal code">Netlify</a></dt>
-                            <dd>deploys a version of your code to a site for free</dd>
+                                <dd>deploys a version of your code to a site for free</dd>
+                            <dt><a href="https://courses.kevinpowell.co/conquering-responsive-layouts" target="_blank" alt="course about conqueuring responsive layouts">Kevin Powel - Conquring Responsive Layouts</a></dt>
+                                <dd>Free 21 day course about responsive design</dd>
+                            <dt><a href="https://favicon.io/favicon-converter/" target="_blank" alt="Converts images to .io for favicon use">Favicon Converter</a></dt>
+                                <dd>Converts images to .io for favicon use</dd>
+                                <dd>Download all files onto website - multiple sizes for clear for image quality</dd>
+                                <dd>copy and paste link text beneath title tag</dd>
+                                <dd>site.webmanifest - lets us show the image on the home screen of our phones when creating a quicklink</dd>
                         </dl>
                     </div>
                     <div class="accordion">
                         <h3 class="accordion-name">Definitions<span class="accordion-arrow"></span></h3>
                         <dl class="inner-accordion-content">
                             <dt>ol</dt>
-                            <dd>ordered list</dd>
+                                <dd>ordered list</dd>
                             <dt>ul</dt>
-                            <dd>unordered list</dd>
+                                <dd>unordered list</dd>
                             <dt>li</dt>
-                            <dd>list item</dd>
+                                <dd>list item</dd>
                             <dt>dl</dt>
-                            <dd>description list</dd>
-                            <dd>the parent element that encloses the list of terms and descriptions</dd>
+                                <dd>description list</dd>
+                                <dd>the parent element that encloses the list of terms and descriptions</dd>
                             <dt><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl"
                                     target="_blank">dt</a></dt>
-                            <dd>description term</dd>
-                            <dd>the child element that specifies a term in a description list, must be used inside dl</dd>
+                                <dd>description term</dd>
+                                <dd>the child element that specifies a term in a description list, must be used inside dl</dd>
                             <dt>dd</dt>
-                            <dd>description details</dd>
-                            <dd>the child element that provides the description, definition, or value for the proceding (dt)
+                                <dd>description details</dd>
+                                <dd>the child element that provides the description, definition, or value for the proceding (dt)
                                 term in a dl</dd>
                             <dt>Web Standards</dt>
-                            <dd>Guidlines and practices for the creation and delivery of content on the www.</dd>
-                            <dd>These standards are crucial for ensuring web content is accessible, reliable, and
+                                <dd>Guidlines and practices for the creation and delivery of content on the www.</dd>
+                                <dd>These standards are crucial for ensuring web content is accessible, reliable, and
                                 compatable, across different devices and platforms.</dd>
-                            <dd>The primary organization responsible for web standards is the world wide web consortium
+                                <dd>The primary organization responsible for web standards is the world wide web consortium
                                 (w3c).</dd>
                             <dt>Core HTML Tags</dt>
-                            <dd>Heading, h1, p, ext (google)</dd>
+                                <dd>Heading, h1, p, ext (google)</dd>
                             <dt>Nesting</dt>
-                            <dd>tags inside other tags (ul, li) creating the tree structure of html tags</dd>
+                                <dd>tags inside other tags (ul, li) creating the tree structure of html tags</dd>
                             <dt>Document Structure</dt>
-                            <dd>the pattern the HTML document should follow (html, head, body) ext (google) </dd>
+                                <dd>the pattern the HTML document should follow (html, head, body) ext (google) </dd>
+                            <dt>Progressive Web App (PWA)</dt>
+                                <dd>turns web app into app looking</dd>
+                                <dd>{
+                                    "name": "",
+                                    "short_name": "",
+                                    "icons":
+                                        [
+                                            {"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}
+                                        ],
+                                    "theme_color": "#ffffff",
+                                    "background_color": "#ffffff",
+                                    "display": "standalone"
+                                }</dd>
+                                <dd>theme_color changes the color of the upper nav in the phone</dd>
+                                <dd>background_color is the color that will show when your app hasn't loaded yet</dd>
+                                <dd>"display": "standalone" makes web app look like standalone application - takes away extra browser things</dd>
                         </dl>
                     </div>
                     <div class="accordion">
@@ -198,6 +228,9 @@
                             <li>caption tag is the title of a table. should be the first child of the table.</li>
                             <li>The scope attribute is used to tell screen readers exactly what cells the header is a header for. add next to th</li>
                             <li>320px is pretty good for almost every mobile device width wise.</li>
+                            <li>abbreviations aren't always helpful</li>
+                            <li>id's shouldn't be used for styling</li>
+                            <li>user-selec: none; stops users from highlighting the text. only use in very specific senarios</li>
                         </ul>
                     </div>
                     <div class="accordion">
@@ -511,7 +544,7 @@
                         <h3 class="accordion-name">Notes<span class="accordion-arrow first-arrow"></span></h3>
                         <ul class="inner-accordion-content" style="display: block;">
                             <li>Great to give feedback because explaining something helps you learn it.
-                                <ul>
+                                <ul class="sub-list">
                                     <li>gain experience reading ccoe</li>
                                     <li>see dif solutions to same problem</li>
                                     <li>Learn to talk about code</li>
@@ -522,11 +555,48 @@
                                 </ul>
                             </li>
                             <li>How to get started
-                                <ul>
+                                <ol class="sub-list">
                                     <li>First Glance at the app (design and functionality)</li>
                                     <li>Get an overview of the code (what's happening, any obvious findings (structure, indentation, comments, etc.))</li>
                                     <li>Read through the code (Do you understand the codes job (if not: is it unfamiliar to you, is it poorly written))</li>
                                     <li>Take Notes (code comments, note file, paper, notes are meant to be private)</li>
+                                </ol>
+                            </li>
+                            <li>Structure your Review
+                                <ul class="sub-list">
+                                    <li>Highlight the good stuff!</li>
+                                    <li>Suggest Improvements. Walk through solutions step by step. Find a nice balance, too much is overwhelming.</li>
+                                    <li>Sometimes explain concepts that are unfamiliar to the person. (naming conventions, heading hierarchy, data attributes,
+                                        how to refactor code, writing DRYer code) - only if they're ready and it isn't too much!!!
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>What to look for (not everything)
+                                <ul class="sub-list">
+                                    <li>Doctype and lang attribute</li>
+                                    <li>Semantic HTML (header, footer, main, section, article) - is there div soup</li>
+                                    <li>Meaningful names (classes, variables, functions, components, files, ect.)</li>
+                                    <li>Structure of files and code (is it easy to find what you're looking for?)</li>
+                                    <li>Indentation and Spacing</li>
+                                    <li>Repetition (the DRY principle)</li>
+                                    <li>Design (Figma design specs, do you like it if they have their own twist, responsiveness, etc.).</li>
+                                    <li>Common Conventions (classes VS ids, const VS let, camelCase vs cobbob-case)</li>
+                                    <li>Accessibility
+                                        <ul class="sub-sub-list">
+                                            <li>Navigation: keyboard navigation, size and spacing on clickable elements, unambiguous link/button texts.</li>
+                                            <li>Styling: color contrasts, hover/focus style.</li>
+                                            <li>AT (assistive technology): alt text, labels, heading hierarchy, visually hidden elements.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Record Review
+                                <ul>
+                                    <li>click start recording</li>
+                                    <li>choose microphone</li>
+                                    <li>runs as long as you want</li>
+                                    <li>edit Review</li>
+                                    <li>publish review</li>
                                 </ul>
                             </li>
                         </ul>
