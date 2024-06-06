@@ -310,9 +310,9 @@
                                             const dialogDimentions = dialog.getBoundingClientRect()
                                             if (
                                                 // clicking outside the dialog
-                                                clientX < dialogDimensions.left ||
+                                                clientX &lt; dialogDimensions.left ||
                                                 e.clientX > dialogDimensions.right ||
-                                                e.clientY < dialogDimensions.top ||
+                                                e.clientY &lt; dialogDimensions.top ||
                                                 e.clientY > dialogDimensions.bottom ||
                                                 // clicking the cancel button
                                                 e.target.id === "cancel-dialog-btn"
