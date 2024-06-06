@@ -21,9 +21,7 @@
     <script>
         /***LOADS CONTENT */
         $(function(){
-            const htmlNotes = fetch('.Notes/htmlNotes.html')
-            console.log(htmlNotes);
-            // $("#html-section").load("./Notes/htmlNotes.html"); 
+            $("#html-section").load("./Notes/htmlNotes.html"); 
         });
 
         $(function(){
@@ -77,7 +75,7 @@
                 </ul>
             </nav>
             <div class="content">
-                <section id="html-section" hidden>
+                <section id="html-section">
                 </section>
                 <section id="css-section" hidden>
                 </section>
