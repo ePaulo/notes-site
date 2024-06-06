@@ -1,5 +1,5 @@
 /**change title to reflect current subject */
-const currentSubjectEl = document.getElementById("current-subject");
+//DOM references for buttons
 const htmlSubjectBtn = document.getElementById("html-subject");
 const cssSubjectBtn = document.getElementById("css-subject");
 const jsSubjectBtn = document.getElementById("js-subject");
@@ -8,6 +8,7 @@ const reactSubjectBtn = document.getElementById("react-subject");
 const codeReviewSubjectBtn = document.getElementById("code-reviews-subject");
 const miscSubjectBtn = document.getElementById("misc-subject");
 
+//DOM references for sections
 const htmlSectionEl = document.getElementById("html-section");
 const cssSectionEl = document.getElementById("css-section");
 const jsSectionEl = document.getElementById("js-section");
@@ -16,102 +17,55 @@ const reactSectionEl = document.getElementById("react-section");
 const codeReviewSectionEl = document.getElementById("code-review-section");
 const miscSectionEl = document.getElementById("misc-section");
 
+//DOM reference for current subject
+const currentSubjectEl = document.getElementById("current-subject");
+
+//Initial state
 currentSubjectEl.textContent = htmlSubjectBtn.textContent;
 htmlSectionEl.removeAttribute("hidden");
 
-htmlSubjectBtn.addEventListener("click", function(){
-    switchTitle(htmlSubjectBtn);
-    
-    htmlSectionEl.hidden = false;
-    
-    cssSectionEl.hidden = true;
-    jsSectionEl.hidden = true;
-    firebaseSectionEl.hidden = true;
-    reactSectionEl.hidden = true;
-    codeReviewSectionEl.hidden = true;
-    miscSectionEl.hidden = true;
-});
+//Event listeners
+htmlSubjectBtn.addEventListener('click', () =>
+  switchTitle(htmlSubjectBtn, htmlSectionEl),
+)
 
-cssSubjectBtn.addEventListener("click", function(){
-    switchTitle(cssSubjectBtn);
+cssSubjectBtn.addEventListener('click', () =>
+  switchTitle(cssSubjectBtn, cssSectionEl),
+)
 
-    cssSectionEl.hidden = false;
+jsSubjectBtn.addEventListener('click', () =>
+  switchTitle(jsSubjectBtn, jsSectionEl),
+)
 
-    htmlSectionEl.hidden = true;
-    jsSectionEl.hidden = true;
-    firebaseSectionEl.hidden = true;
-    reactSectionEl.hidden = true;
-    codeReviewSectionEl.hidden = true;
-    miscSectionEl.hidden = true;
-});
+firebaseSubjectBtn.addEventListener('click', () =>
+  switchTitle(firebaseSubjectBtn, firebaseSectionEl),
+)
 
-jsSubjectBtn.addEventListener("click", function(){
-    switchTitle(jsSubjectBtn);
+reactSubjectBtn.addEventListener('click', () =>
+  switchTitle(reactSubjectBtn, reactSectionEl),
+)
 
-    jsSectionEl.hidden = false;
-    
-    htmlSectionEl.hidden = true;
-    cssSectionEl.hidden = true;
-    firebaseSectionEl.hidden = true;
-    reactSectionEl.hidden = true;
-    codeReviewSectionEl.hidden = true;
-    miscSectionEl.hidden = true;
-});
+codeReviewSubjectBtn.addEventListener('click', () =>
+  switchTitle(codeReviewSubjectBtn, codeReviewSectionEl),
+)
 
-firebaseSubjectBtn.addEventListener("click", function(){
-  switchTitle(firebaseSubjectBtn);
+miscSubjectBtn.addEventListener('click', () =>
+  switchTitle(miscSubjectBtn, miscSectionEl),
+)
 
-  firebaseSectionEl.hidden = false;
-  
-  htmlSectionEl.hidden = true;
-  cssSectionEl.hidden = true;
-  jsSectionEl.hidden = true;
-  reactSectionEl.hidden = true;
-  codeReviewSectionEl.hidden = true;
-  miscSectionEl.hidden = true;
-});
+// Functions
+function switchTitle(subjectBtn, sectionEl) {
+  currentSubjectEl.textContent = subjectBtn.textContent
 
-reactSubjectBtn.addEventListener("click", function(){
-    switchTitle(reactSubjectBtn);
+  htmlSectionEl.hidden = true
+  cssSectionEl.hidden = true
+  jsSectionEl.hidden = true
+  firebaseSectionEl.hidden = true
+  reactSectionEl.hidden = true
+  codeReviewSectionEl.hidden = true
+  miscSectionEl.hidden = true
 
-    reactSectionEl.hidden = false;
-    
-    htmlSectionEl.hidden = true;
-    cssSectionEl.hidden = true;
-    jsSectionEl.hidden = true;
-    firebaseSectionEl.hidden = true;
-    codeReviewSectionEl.hidden = true;
-    miscSectionEl.hidden = true;
-});
-
-codeReviewSubjectBtn.addEventListener("click", function(){
-    switchTitle(codeReviewSubjectBtn);
-
-    codeReviewSectionEl.hidden = false;
-    
-    htmlSectionEl.hidden = true;
-    cssSectionEl.hidden = true;
-    jsSectionEl.hidden = true;
-    firebaseSectionEl.hidden = true;
-    reactSectionEl.hidden = true;
-    miscSectionEl.hidden = true;
-});
-
-miscSubjectBtn.addEventListener("click", function(){
-    switchTitle(miscSubjectBtn);
-
-    miscSectionEl.hidden = false;
-
-    htmlSectionEl.hidden = true;
-    cssSectionEl.hidden = true;
-    jsSectionEl.hidden = true;
-    firebaseSectionEl.hidden = true;
-    codeReviewSectionEl.hidden = true;
-    reactSectionEl.hidden = true;
-});
-
-function switchTitle(text) {
-    currentSubjectEl.textContent = text.textContent;
+  sectionEl.hidden = false
 }
 
 /**Accordion */

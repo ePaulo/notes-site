@@ -21,7 +21,9 @@
     <script>
         /***LOADS CONTENT */
         $(function(){
-            $("#html-section").load("./Notes/htmlNotes.html"); 
+            const htmlNotes = fetch('.Notes/htmlNotes.html')
+            console.log(htmlNotes);
+            // $("#html-section").load("./Notes/htmlNotes.html"); 
         });
 
         $(function(){
