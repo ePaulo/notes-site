@@ -1,0 +1,154 @@
+<h2>HTML</h2>
+<p>Hypertext Markup Language</p>
+<p>Used for standard document design in websites</p>
+<div class="accordion first-accordion">
+    <h3 class="accordion-name">Notes<span class="accordion-arrow first-arrow"></span></h3>
+    <ul class="inner-accordion-content" style="display: block;">
+        <li>Add <code><title></title></code> Tags - say why</li>
+        <li>Add <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang"
+                target="_blank" alt="documentation on the lang attribute">html lang attribute</a> to
+            your header <code><html lang="en"></code> - sets the language of the content on the page
+        </li>
+        <li>Fallowing heading structure h1 > h2 > h3 is good for Accessibility</li>
+        <li>Can drag and drop HTML file into browser and it will show content</li>
+        <li>Elements without closing tags can be "closed" by ending it in /</li>
+        <li>width is an attribute that can be added outside of the style attribute - not valid HTML</li>
+        <li>div is short for divider</li>
+        <li>alt + shft + F organizes code indents</li>
+        <li>HTML Document Tree</li>
+        <li>Src-set helps render different images per browser size</li>
+        <li>input has type attributes checkbox, color, date, text, password, time, file ect</li>
+        <li>input has a placeholder attribute</li>
+        <li>Head holds metadata - styles, titles, scripts</li>
+        <li>link rel="stylesheet" href="styles.css" - link to external css file - goes in head</li>
+        <li>Metadata controls what is seen when a user shares the link</li>
+        <li>Head holds the tags you see on the page</li>
+        <li>!doctype html specifies html version (html 5)</li>
+        <li>dl, description list, used as a contianer for a list of terms, encloses a list of groups of
+            terms, commonly used to implement a glossory or display metadata (as key-value pairs)</li>
+        <li class="sub-list"><span>Why write Alt Text</span>
+            <ul>
+                <li>Makes site more accessible</li>
+                <li>Fallback incase image doesn't load</li>
+                <li>Helps site rank higher on google</li>
+            </ul>
+        </li>
+        <li class="sub-list"><span>Rules to writing alt text</span>
+            <ul>
+                <li>don't use "image of"</li>
+                <li>Be concise (less than 125 characters) - a lot of screen readers will cut off after 125
+                        characters</li>
+                <li>How would you describe it over the phone</li>
+            </ul>
+        </li>
+        <li>ctrl + d = highlights all similar text, changes appropriate text</li>
+        <li>Setting the Viewport - tells the computer not to shrink the website - meta name="viewport" content="width=device-width, initial-scale=1.0".</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="_blank" alt="web application manifest documentation">Web Applciation Manifest</a> 
+            <ul>
+                <li>manifest.json - Tells chrome the info it needs to hook program into chrome</li>
+                <li>manifest.json - name version icon ect.</li>
+            </ul>
+        </li>
+        <li>Article tag - A piece of content on your page that can stand on it's own. E.g. a product card, a block post etc.</li>
+        <li>Section tag - represents a generidc standalone section of a document, which doesn't have a more specific semantic element to represent it.</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" target="_blank" alt="the field set element documentation">fieldset tag</a> is a child of form
+            <ul>
+                <li>it is used to group several controls within a web form</li>
+                <li>visually, it wraps the controls with a border.</li>
+                <li>add the legend tag to add a caption for the fieldset</li>
+                <li>there can be multiple fieldsets per form</li>
+            </ul>
+        </li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank" alt="the details discosure element documentation">details</a> and summary tags create a clickable accordon.
+            <ul>
+                <li>However it is not <a href="https://daverupert.com/2019/12/why-details-is-not-an-accordion/" target="_blank" alt="Why the details tag is Not an Accordion">accessible</a>.</li>
+                <li>style the marker iwth ::marker</li>
+            </ul>
+        </li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="_blank" alt="the picture element documentation">picture tag</a>
+            <ul>
+                <li>more flexibility in specifying image sources</li>
+                <li>multiple images to fill the browser viewport more responsively.</li>
+                <li>contains two tags, one or more source tags (with media and srcset attributres), and one img tag (for browsers that don't support the picture tag)</li>
+                <li>source media="(max-width: 600px)" srcset="url" - mobile image</li>
+                <li>source media="(min-width: 601px)" srcset="url" - desktop image</li>
+                <li>img src="URL" - fallback image</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="accordion">
+    <h3 class="accordion-name">Resources<span class="accordion-arrow"></span></h3>
+    <dl class="inner-accordion-content">
+        <dt><a href="https://app.netlify.com/" target="_blank"
+                alt="goes to the netlify site which is used to deploy personal code">Netlify</a></dt>
+            <dd>deploys a version of your code to a site for free</dd>
+        <dt><a href="https://courses.kevinpowell.co/conquering-responsive-layouts" target="_blank" alt="course about conqueuring responsive layouts">Kevin Powel - Conquring Responsive Layouts</a></dt>
+            <dd>Free 21 day course about responsive design</dd>
+        <dt><a href="https://favicon.io/favicon-converter/" target="_blank" alt="Converts images to .io for favicon use">Favicon Converter</a></dt>
+            <dd>Converts images to .io for favicon use</dd>
+            <dd>Download all files onto website - multiple sizes for clear for image quality</dd>
+            <dd>copy and paste link text beneath title tag</dd>
+            <dd>site.webmanifest - lets us show the image on the home screen of our phones when creating a quicklink</dd>
+    </dl>
+</div>
+<div class="accordion">
+    <h3 class="accordion-name">Definitions<span class="accordion-arrow"></span></h3>
+    <dl class="inner-accordion-content">
+        <dt>ol</dt>
+            <dd>ordered list</dd>
+        <dt>ul</dt>
+            <dd>unordered list</dd>
+        <dt>li</dt>
+            <dd>list item</dd>
+        <dt>dl</dt>
+            <dd>description list</dd>
+            <dd>the parent element that encloses the list of terms and descriptions</dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl"
+                target="_blank">dt</a></dt>
+            <dd>description term</dd>
+            <dd>the child element that specifies a term in a description list, must be used inside dl</dd>
+        <dt>dd</dt>
+            <dd>description details</dd>
+            <dd>the child element that provides the description, definition, or value for the proceding (dt)
+            term in a dl</dd>
+        <dt>Web Standards</dt>
+            <dd>Guidlines and practices for the creation and delivery of content on the www.</dd>
+            <dd>These standards are crucial for ensuring web content is accessible, reliable, and
+            compatable, across different devices and platforms.</dd>
+            <dd>The primary organization responsible for web standards is the world wide web consortium
+            (w3c).</dd>
+        <dt>Core HTML Tags</dt>
+            <dd>Heading, h1, p, ext (google)</dd>
+        <dt>Nesting</dt>
+            <dd>tags inside other tags (ul, li) creating the tree structure of html tags</dd>
+        <dt>Document Structure</dt>
+            <dd>the pattern the HTML document should follow (html, head, body) ext (google) </dd>
+        <dt>Progressive Web App (PWA)</dt>
+            <dd>turns web app into app looking</dd>
+            <dd>{
+                "name": "",
+                "short_name": "",
+                "icons":
+                    [
+                        {"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}
+                    ],
+                "theme_color": "#ffffff",
+                "background_color": "#ffffff",
+                "display": "standalone"
+            }</dd>
+            <dd>theme_color changes the color of the upper nav in the phone</dd>
+            <dd>background_color is the color that will show when your app hasn't loaded yet</dd>
+            <dd>"display": "standalone" makes web app look like standalone application - takes away extra browser things</dd>
+        <dt>modal / <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" target="_blank" alt="the dialog element documentation">dialog</a></dt>
+            <dd>a popup that appears on top of the current page.</dd>
+            <dd>the modal takes priority and prevents interactions with the rest of the page</dd>
+    </dl>
+</div>
+<div class="accordion">
+    <h3 class="accordion-name">Questions<span class="accordion-arrow"></span></h3>
+    <ul class="inner-accordion-content">
+        <li>Why is it target="_blank"?</li>
+        <li>what does rel mean</li>
+    </ul>
+</div>
