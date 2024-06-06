@@ -19,9 +19,10 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
         /***LOADS CONTENT */
-        ($(function(){
+        function addHTML(){
             $("#html-section").load("./Notes/htmlNotes.html"); 
-        }))();
+        };
+        addHTML();
 
         $(function(){
             $("#css-section").load("./Notes/cssNotes.html"); 
