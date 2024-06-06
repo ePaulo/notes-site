@@ -16,6 +16,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="icon" type="image/x-icon" href="./code-notes-favicon.png">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        /***LOADS CONTENT */
+        $(function(){
+        $("#html-section").load("htmlNotes.html"); 
+        });
+
+        $(function(){
+        $("#css-section").load("cssNotes.html"); 
+        });
+
+        $(function(){
+        $("#js-section").load("jsNotes.html"); 
+        });
+
+        $(function(){
+        $("#firebase-section").load("firebaseNotes.html"); 
+        });
+
+        $(function(){
+        $("#react-section").load("reactNotes.html"); 
+        });
+
+        $(function(){
+        $("#code-reviews-section").load("codeReviewsNotes.html"); 
+        });
+
+        $(function(){
+        $("#misc-section").load("miscNotes.html"); 
+        });
+    </script>
 </head>
 
 <body>
@@ -31,7 +62,7 @@
             <img src="./code-notes-favicon.png" alt="neon green icon of a laptop with a code file with a pen pointed at it" />
         </div>
         <div class="page">
-            <div class="nav">
+            <nav class="nav">
                 <ul>
                     <li id="html-subject">HTML</li>
                     <li id="css-subject">CSS</li>
@@ -41,7 +72,7 @@
                     <li id="code-reviews-subject">Code Reviews</li>
                     <li id="misc-subject">Misc</li>
                 </ul>
-            </div>
+            </nav>
             <div class="content">
                 <section id="html-section" hidden>
                 </section>

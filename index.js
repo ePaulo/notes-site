@@ -141,35 +141,6 @@ for (let i = 0; i < firstAccordionArrow.length; i++) {
     firstAccordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-up"></i>`; 
 }
 
-/***LOADS CONTENT */
-$(function(){
-  $("#html-section").load("htmlNotes.html"); 
-});
-
-$(function(){
-  $("#css-section").load("cssNotes.html"); 
-});
-
-$(function(){
-  $("#js-section").load("jsNotes.html"); 
-});
-
-$(function(){
-  $("#firebase-section").load("firebaseNotes.html"); 
-});
-
-$(function(){
-  $("#react-section").load("reactNotes.html"); 
-});
-
-$(function(){
-  $("#code-reviews-section").load("codeReviewsNotes.html"); 
-});
-
-$(function(){
-  $("#misc-section").load("miscNotes.html"); 
-});
-
 
 /***TODOs
  * 1. take mentos advice and refactor notes
