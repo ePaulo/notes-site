@@ -17,12 +17,12 @@
 
     <link rel="icon" type="image/x-icon" href="./code-notes-favicon.png">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="jquery.js"></script> 
     <script>
         /***LOADS CONTENT */
-        function addHTML(){
+        $(function(){
             $("#html-section").load("./Notes/htmlNotes.html"); 
-        };
-        addHTML();
+        });
 
         $(function(){
             $("#css-section").load("./Notes/cssNotes.html"); 
