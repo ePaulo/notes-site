@@ -141,6 +141,10 @@ for (let i = 0; i < firstAccordionArrow.length; i++) {
     firstAccordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-up"></i>`; 
 }
 
+$(function() {
+  $("#html-section").load("htmlNotes.html");
+});
+
 /***TODOs
  * 1. take mentos advice and refactor notes
  * 2. set up notes to use separate pages
