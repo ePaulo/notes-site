@@ -27,6 +27,7 @@ htmlSectionEl.removeAttribute("hidden");
 //Event listeners
 htmlSubjectBtn.addEventListener('click', () =>
   switchTitle(htmlSubjectBtn, htmlSectionEl),
+  $("#html-section").load("htmlNotes.html")
 )
 
 cssSubjectBtn.addEventListener('click', () =>
