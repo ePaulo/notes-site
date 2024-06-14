@@ -10,43 +10,43 @@
 <div class="accordion first-accordion">
     <h3 class="accordion-name">Notes<span class="accordion-arrow first-arrow"></span></h3>
     <ul class="inner-accordion-content" style="display: block;">
-        <li>font-weight: lighter, normal, or bold</li>
-        <li>display: inline; stacks items beside eachother horizontally</li>
-        <li>display: block; stacks items on top of eachother vertically, each item takes up full width
-        </li>
-        <li>browser assumes body tag wants margin around</li>
-        <li>margin will collapse into eachother, largest margin will take presidence</li>
-        <li>center an element: display: block; set width, set margin left/right to auto</li>
-        <li>Use line-height instead of height for input fields - more browsers will honor it</li>
+        <li><blockcode>font-weight: lighter, normal, or bold</blockcode></li>
+        <li><blockcode>display: inline;</blockcode> stacks items beside eachother horizontally.</li>
+        <li><blockcode>display: block;</blockcode> stacks items on top of eachother vertically, each item takes up full width.</li>
+        <li>Browser assumes body tag wants margin around.</li>
+        <li>Margin will collapse into eachother, largest margin will take presidence.</li>
+        <li>To center an element <blockcode>display: block; width: whatever; margin-left: auto; margin-right: auto;</blockcode>.</li>
+        <li>Use <blockcode>line-height</blockcode> instead of <blockcode>height</blockcode> for input fields because more browsers will honor it</li>
         <li class="sub-list"><span><a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_blank"
                 alt="brings user to bootstraps documentation on how to use flexbox">Flexbox</a> is god.</span>
             <ul>
-                <li>justify-content: start, center, end, space-around, space-evenly, space-between; controls right to left (main axis)</li>
-                <li>gap: top right bottom left px;</li>
-                <li>only affects direct children (if you don't want something effected, change it to be
-                    within divs).</li>
-                <li>flex-direction: column, row; has default value row, changing to column will switch the align items and display-content axis</li>
-                <li>align-items: start, center, end; controls top to bottom (cross axis), has default value stretch</li>
-                <li>flex-wrap: wrap, nowrap, wrap-reverse; keeps the items in the defined max-width and pushes items to a new line.</li>
-                <li>flex-grow: 1; used on the child item, will increase the width of the item to the full width.</li>
-                <li>setting margin to auto anywhere will push the item to the oposite side.</li>
-                <li>align-self (flex-end, flex-start, stretch(default), center) allows you to set the vertical alignment of an individual element 
-                    inside a flexbox.</li>
-                <li>display: flex; as parent element and margin: auto; as child element centers element.</li>
+                <li><blockcode>justify-content: start, center, end, space-around, space-evenly, space-between;</blockcode> controls right to left (main axis)</li>
+                <li><blockcode>gap: top right bottom left px;</blockcode></li>
+                <li>Only affects direct children (if you don't want something effected, change it to be within divs).</li>
+                <li><blockcode>flex-direction: column, row;</blockcode> has default value row, changing to column will switch the align items and display-content 
+                    axis.
+                </li>
+                <li><blockcode>align-items: start, center, end;</blockcode> controls top to bottom (cross axis), has default value stretch.</li>
+                <li><blockcode>flex-wrap: wrap, nowrap, wrap-reverse;</blockcode> keeps the items in the defined max-width and pushes items to a new line.</li>
+                <li><blockcode>flex-grow: 1;</blockcode> used on the child item, will increase the width of the item to the full width.</li>
+                <li>Setting <blockcode>margin: auto;</blockcode> anywhere will push the item to the oposite side.</li>
+                <li><blockcode>align-self: flex-end, flex-start, stretch(default), center;</blockcode> allows you to set the vertical alignment of an individual 
+                    element inside a flexbox.
+                </li>
+                <li><blockcode>display: flex;</blockcode> as parent element and <blockcode>margin: auto;</blockcode> as child element centers element.</li>
             </ul>
         </li>
-        <li>Divs are dispaly block by default</li>
-        <li>Don't use pure black or pure white because it will block/show all light emitted from the
-            screen, making it difficult for your viewers.</li>
-        <li>background-size: cover (background is the width of the container), (google)</li>
-        <li>buttons and inputs don't inherit font-family (use font-family: inherit;)</li>
-        <li>the span tag is display: inline;</li>
-        <li>Use id for unique elements that will only be used once</li>
-        <li>Use classes for elements that will be reused</li>
-        <li>.webp is similar to .gif, but is more compressed</li>
-        <li>text-shadow: horizontal-line vertical-line blur color;</li>
-        <li>can't force the width or height of an inline element</li>
-        <li>divs are display block</li>
+        <li>Divs are <blockcode>display: block;</blockcode> by default.</li>
+        <li>Don't use pure black or pure white because it will block/show all light emitted from the screen, making it difficult for your viewers.</li>
+        <li><blockcode>background-size: cover;</blockcode> will make the background the width of the container.</li>
+        <li>Buttons and inputs don't inherit font-family. Use <blockcode>font-family: inherit;</blockcode></li>
+        <li>The span tag is <blockcode>display: inline;</blockcode></li>
+        <li>Use id for unique elements that will only be used once.</li>
+        <li>Use classes for elements that will be reused.</li>
+        <li>.webp is similar to .gif, but is more compressed.</li>
+        <li><blockcode>text-shadow: horizontal-line vertical-line blur color;</blockcode></li>
+        <li>You can't force the width or height of an inline element.</li>
+        <li><blockcode>div</blockcode>s are <blockcode>display: block;</blockcode></li>
         <li>WAI-ARIA is used to make background images more accessible. add a role attribute to the section your background-image is on and set it to img. (role="img") then add the aria-label attribute (aria-label="description"). used as a supliment to semantic HTML, not a replacement</li>
         <li>em tag adds symantic meaning, screen readers can emphasize</li>
         <li>add audio by using audio tag, and controls. you can add an anchor tag between the audio tags as a backup incase the audio fails. put a source tag between the audio tags and add the src attribute in order to have multiple sources. You can also add a type attribute audio/mp3 or audio/wav. Otherwise just add the src attribute to the audio tag. </li>
