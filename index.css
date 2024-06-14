@@ -237,3 +237,10 @@ a:hover {
   
   padding-right: 15px;
 }
+
+/**CODE SECTIONS**/
+blockcode {
+  background-color: #222;
+  font-family: "Source Code Pro", monospace;
+  color: whitesmoke;
+}
