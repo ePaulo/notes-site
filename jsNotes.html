@@ -8,73 +8,117 @@
 <div class="accordion first-accordion">
     <h3 class="accordion-name">Notes<span class="accordion-arrow first-arrow"></span></h3>
     <ul class="inner-accordion-content" style="display: block;">
-        <li>Script tags in HTML are where you can write JS. add src="filename" to link js file to HTML file.</li>
-        <li>console.log() to log to console</li>
+        <li>Script tags in HTML are where you can write JS. add <blockcode>src="filename"</blockcode> to link js file to HTML file.</li>
+        <li><blockcode>console.log()</blockcode> to log to console</li>
         <li>JS reads top to bottom. Can't access things before they're initialized.</li>
-        <li>function functionName() {}</li>
-        <li>function = command</li>
-        <li>run = call = invoke</li>
-        <li>++ = self plus one</li>
-        <li>innerText gets/sets the text inside the element called. Can't read spaces.</li>
+        <li><blockcode>function functionName() {}</blockcode></li>
+        <li>Function is command.</li>
+        <li>Run is call or invoke.</li>
+        <li><blockcode>++</blockcode> is self plus one</li>
+        <li><blockcode>innerText</blockcode> gets/sets the text inside the element called. Can't read spaces.</li>
         <li>When it's a string VS a number the string always wins.</li>
         <li>You can use an escape character (/) to display a " in a string surounded by "".</li>
-        <li>+= = self plus the oposite of the equal sign.</li>
-        <li>Name elements you grab elementPurposeEl</li>
-        <li>let = create the element, it can and will be changed later</li>
-        <li>const = create the element, it can't be changed later</li>
-        <li>var can die</li>
-        <li>textContent = gets/sets the text inside the element called. Can read spaces.</li>
+        <li><blockcode>+=</blockcode> is self plus the oposite of the equal sign.</li>
+        <li>Name elements you grab <blockcode>elementPurposeEl</blockcode>.</li>
+        <li><blockcode>let</blockcode> creates the element, it can and will be changed later.</li>
+        <li><blockcode>const</blockcode> creates the element, it can't be changed later.</li>
+        <li><blockcode>var</blockcode> is dead.</li>
+        <li><blockcode>textContent</blockcode> gets/sets the text inside the element called. It can read spaces.</li>
         <li>use `` when you need to add variables to text.</li>
-        <li>You can't use the same name for functions as in an element</li>
-        <li>to immediately run a function wrap the function in () and end it in (); (function functionName() {})().</li>
-        <li>using onclick in HTML is less ideal then using addEventListener("click", function() {}). you need to use ; at the end of all code for this to work</li>
-        <li>Operator precedence is PEMDAS in JS</li>
-        <li>=== = strictly equal</li>
-        <li>== = less strict. converts numbers into strings if necessary</li>
-        <li>= = become</li>
-        <li>Use hasElementDescription for naming a boolean</li>
-        <li>an empty string "" is a falsey value.</li>
-        <li>expressions passed into conditions are translated into booleans</li>
-        <li>declare = create</li>
-        <li>querySelector is more dynamic. You have to be more specific and identify the element how you would in CSS.</li>
-        <li>Arrays are stored in []. they start at 0. To call an array item do arrayName[numberYouWant]. arrayName.length counts normal.
-            An array is a copmlex data type. arrayName.push(newItem) adds content to the end of an array. arrayName.pop() removes the last item of an array.
+        <li>You can't use the same name for functions as in an element.</li>
+        <li>To immediately run a function wrap the function in () and end it in ();
+            <blockcode>
+                (function functionName() {
+                    function actions
+                })()
+            </blockcode>
         </li>
-        <li>for (let i = 0; i lessthansign maxAmountOfLoop; i++){}</li>
-        <li>export function(){} exports to another file if you import (import { desiredFunction } from "fileLocation") in that other file.</li>
-        <li>anytime you use the import or export in JS you have to add type="module" to the HTML JS file reference</li>
+        <li>Using onclick in HTML is less ideal then using <blockcode>addEventListener("click", function() {})</blockcode>. 
+            You need to use ; at the end of all code for this to work.</li>
+        <li>Operator precedence is PEMDAS in JS.</li>
+        <li><blockcode>===</blockcode> means strictly equal</li>
+        <li><blockcode>==</blockcode> is less strict. It converts numbers into strings if necessary.</li>
+        <li><blockcode>=</blockcode> means it will become.</li>
+        <li>Use <blockCode>hasElementDescription</blockCode> for naming a boolean.</li>
+        <li>An empty string "" is a falsey value.</li>
+        <li>Expressions passed into conditions are translated into booleans.</li>
+        <li>Declare means to create.</li>
+        <li><blockcode>querySelector</blockcode> is more dynamic. You have to be more specific and identify the element how you would in CSS 
+            (with . or # before the name).
+        </li>
+        <li class="sub-list"><span>Arrays</span>
+            <ul>
+                <li>Arrays are stored in [].</li>
+                <li>They start at 0.</li>
+                <li>To call an array item do <blockcode>arrayName[numberYouWant]</blockcode>.</li>
+                <li><blockcode>arrayName.length</blockcode> counts starting at one.</li>
+                <li>An array is a copmlex data type.</li>
+                <li><blockcode>arrayName.push(newItem)</blockcode> adds content to the end of an array.</li>
+                <li><blockcode>arrayName.pop()</blockcode> removes the last item of an array.</li>
+            </ul>
+        </li>
+        <li><blockcode>for (let i = 0; i &lt; maxAmountOfLoop; i++){}</blockcode></li>
+        <li><blockcode>export function(){}</blockcode> exports to another file if you import 
+            (<blockcode>import { desiredFunction } from "fileLocation"</blockcode>) in that other file.
+        </li>
+        <li>Anytime you use the import or export in JS you have to add <blockcode>type="module"</blockcode> to the HTML JS file reference.</li>
         <li>Name your function by thinking about what it is doing and what it's doing that to.</li>
         <li>If you need a element from function1 use a parameter in function2 and call function2 in function1.</li>
-        <li>Object --- let objectName = { "key": "value"}</li>
-        <li>turn an objects values into an array by Object.values(objectName)</li>
-        <li>turn an objects keys into an array by Object.keys(objectName)</li>
-        <li>turn an object into an array of arrays by Object.entries(objectName)</li>
-        <li>.append(element) adds the element to whatever you're appending to.</li>
-        <li>element.addEventListener("click"), function() {}</li>
-        <li>getElementbyID</li>
-        <li>querySelector</li>
-        <li>getElementbyClassName</li>
-        <li>the dialog tag
+        <li class="sub-list"><span>Object</span>
             <ul>
-                <li>dialog.show() // opens a non-modal dialog</li>
-                <li>dialog.showModal() // opens a modal</li>
-                <li>dialog.close() // Closes the dialog</li>
-                <li>closing the dialog when clicking outside:
-                    dialog.addEventListener("click", e=> {
-                        const dialogDimentions = dialog.getBoundingClientRect()
-                        if (
-                            // clicking outside the dialog
-                            clientX &lt; dialogDimensions.left ||
-                            e.clientX > dialogDimensions.right ||
-                            e.clientY &lt; dialogDimensions.top ||
-                            e.clientY > dialogDimensions.bottom ||
-                            // clicking the cancel button
-                            e.target.id === "cancel-dialog-btn"
-                        ){
-                            dialog.close()
-                        }
-                    })
+                <li><blockcode>let objectName - { "key": "value"}</blockcode></li>
+                <li>Turn an objects values into an array by using <blockcode>Object.values(objectName)</blockcode>.</li>
+                <li>Turn an objects keys into an array by using <blockcode>Object.keys(objectName)</blockcode></li>
+                <li>Turn an object into an array of arrays by using <blockcode>Object.entries(objectName)</blockcode>)</li>
+            </ul>
+        </li>
+        <li><blockcode>.append(element)</blockcode> adds the element to whatever you're appending to.</li>
+        <li><blockcode>elementName.addEventListener("click"), function() {}</blockcode></li>
+        <li><blockcode>getElementbyID</blockcode></li>
+        <li><blockcode>querySelector</blockcode></li>
+        <li><blockcode>getElementbyClassName</blockcode></li>
+        <li>The Dialog Tag
+            <ul>
+                <li><blockcode>dialog.show()</blockcode> opens a non-modal dialog</li>
+                <li><blockcode>dialog.showModal()</blockcode> opens a modal</li>
+                <li><blockcode>dialog.close()</blockcode> Closes the dialog</li>
+                <li>To close the dialog when clicking outside the dialog box:
+                    <blockcode>
+                        dialog.addEventListener("click", e=> {
+                            const dialogDimentions = dialog.getBoundingClientRect()
+                            if (
+                                // clicking outside the dialog
+                                clientX &lt; dialogDimensions.left ||
+                                e.clientX > dialogDimensions.right ||
+                                e.clientY &lt; dialogDimensions.top ||
+                                e.clientY > dialogDimensions.bottom ||
+                                // clicking the cancel button
+                                e.target.id === "cancel-dialog-btn"
+                            ){
+                                dialog.close()
+                            }
+                        })
+                    </blockcode>
                 </li>
+            </ul>
+        </li>
+        <li><blockcode>setTimeout</blockcode>
+            <ul>
+                <li>Delays the execution of the code inside it.</li>
+                <li>Method.</li>
+                <li>
+                    <blockcode>
+                        setTimeout(function(){
+                            what you don't want to fire
+                        }, number of miliseconds you want to delay by)
+                    </blockcode>
+                </li>
+            </ul>
+        </li>
+        <li><blockcode>element.style</blockcode>
+            <ul>
+                <li>Targets an element's style.</li>
+                <li><blockcode>elementName.style.what you want to change = "what you want to change it to"</blockcode></li>
             </ul>
         </li>
     </ul>
@@ -83,53 +127,54 @@
     <h3 class="accordion-name">Resources<span class="accordion-arrow"></span></h3>
     <dl class="inner-accordion-content">
         <dt></dt>
-        <dd></dd>
+            <dd></dd>
     </dl>
 </div>
 <div class="accordion">
     <h3 class="accordion-name">Definitions<span class="accordion-arrow"></span></h3>
     <dl class="inner-accordion-content">
         <dt>DOM</dt>
-        <dd>Document Object Model</dd>
-        <dd>How you use JS to control websites</dd>
+            <dd>Document Object Model</dd>
+            <dd>How you use JS to control websites.</dd>
         <dt>Escape Character</dt>
-        <dd>a character that invokes an alternative interpretation on the following characters in a character sequence</dd>
+            <dd>A character that invokes an alternative interpretation on the following characters in a character sequence.</dd>
         <dt>Local Dev Environment</dt>
-        <dd>Text editor - a tool to edit code on your computer</dd>
-        <dd>Version control - a tool to keep changes updated on Github</dd>
-        <dd>Escape Characters List:
-            <ul class="sub-list">
-                <li>\t = insert a tab in the text</li>
-                <li>\b = insert a backspace in the text</li>
-                <li>\n = insert a newline in the text</li>
-                <li>\r = insert a carriage in the text</li>
-                <li>\f = insert a form feed in the text</li>
-                <li>\' = insert a single quote character in the text</li>
-                <li>\" = insert a double quote character in the text</li>
-                <li>\\ = insert a backslash character in the text</li>
-            </ul>
-        </dd>
+            <dd>A text editor is a tool to edit code on your computer.</dd>
+            <dd>Version control is a tool to keep changes updated on Github.</dd>
+            <dd class="sub-list"><span>Escape Characters List:</span>
+                <ul>
+                    <li>\t = insert a tab in the text</li>
+                    <li>\b = insert a backspace in the text</li>
+                    <li>\n = insert a newline in the text</li>
+                    <li>\r = insert a carriage in the text</li>
+                    <li>\f = insert a form feed in the text</li>
+                    <li>\' = insert a single quote character in the text</li>
+                    <li>\" = insert a double quote character in the text</li>
+                    <li>\\ = insert a backslash character in the text</li>
+                </ul>
+            </dd>
         <dt>Data Type</dt>
-        <dd>defines the data type that a variable can store</dd>
-        <dd>Numbers, Strings, Boolean, Bigint, Undefined, Null, Symbol, Object</dd>
+            <dd>defines the data type that a variable can store</dd>
+            <dd>Numbers, Strings, Boolean, Bigint, Undefined, Null, Symbol, Object</dd>
         <dt>Method</dt>
-        <dd>access and manipulate the data stored in an object</dd>
-        <dd>written as method()</dd>
+            <dd>Access and manipulate the data stored in an object.</dd>
+            <dd>written as <blockcode>method()</blockcode>.</dd>
         <dt>createElement</dt>
-        <dd>a function that allows you to create an element.</dd>
-        <dd>a method that needs to be applied to the document object.</dd>
-        <dd>document.createElement(elementType)</dd>
-        <dd>Example: document.createElement("li")</dd>
+            <dd>A function that allows you to create an element.</dd>
+            <dd>A method that needs to be applied to the document object.</dd>
+            <dd><blockcode>document.createElement(elementType)</blockcode></dd>
+            <dd>Example: <blockcode>document.createElement("li")</blockcode></dd>
         <dt>Template Strings</dt>
-        <dd>`html stuff and also text and also ${variables}`</dd>
+            <dd><blockcode>`html stuff and also text and also ${variables}`</blockcode></dd>
     </dl>
 </div>
 <div class="accordion">
     <h3 class="accordion-name">Questions<span class="accordion-arrow"></span></h3>
     <ul class="inner-accordion-content">
-        <li>Why does getElementByClassName return an array</li>
-        <li>is it better to use "" or '' in js</li>
-        <li>what does i in the for loop mean?</li>
-        <li>long but accurate function names, yes or no?</li>
+        <li>Why does getElementByClassName return an array?</li>
+        <li>Is it better to use "" or '' in js?</li>
+        <li>What does i in the for loop mean?</li>
+        <li>Long but accurate function names, yes or no?</li>
+        <li>Is it bad practice to put a setTimeout method wihtin another setTimeout method?</li>
     </ul>
 </div>

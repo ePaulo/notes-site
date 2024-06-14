@@ -29,6 +29,10 @@
                 <li>align-items: start, center, end; controls top to bottom (cross axis), has default value stretch</li>
                 <li>flex-wrap: wrap, nowrap, wrap-reverse; keeps the items in the defined max-width and pushes items to a new line.</li>
                 <li>flex-grow: 1; used on the child item, will increase the width of the item to the full width.</li>
+                <li>setting margin to auto anywhere will push the item to the oposite side.</li>
+                <li>align-self (flex-end, flex-start, stretch(default), center) allows you to set the vertical alignment of an individual element 
+                    inside a flexbox.</li>
+                <li>display: flex; as parent element and margin: auto; as child element centers element.</li>
             </ul>
         </li>
         <li>Divs are dispaly block by default</li>
@@ -132,6 +136,33 @@
                 <li>clear: left; means nothing will float to the left of the item.</li>
                 <li>Float is good used for drop caps, floating quotes, floating information boxes.</li>
                 <li>float but keep item in container, use display: flow-root;.</li>
+            </ul>
+        </li>
+        <li>Can use CSS to hide an element (bit complex) to make the element used for screen readers only.</li>
+        <li>inverse is a common class name for dark backgrounds with light text next to light backgrounds with dark text.</li>
+        <li>Position: Absolute;
+            <ul>
+                <li>Use on child element.</li>
+                <li>Put position: relative; on parent element so the child element stays within the container.</li>
+                <li>Use top, left, bottom, and right to move child element.</li>
+                <li>use to position an element relative to a containing element. The element scrolls with the content.</li>
+            </ul>
+        </li>
+        <li>position: fixed;
+            <ul>
+                <li>Needs a top, left, right, bottom. Add margin: auto to center it completely.</li>
+                <li>use to lock an element in a position relative to the window. It maintains that position even when scrolling.</li>
+                <li>Not part of main or header content.</li>
+            </ul>
+        </li>
+        <li>If you have white space under an image change it to display: block;.</li>
+        <li>z-axis (content stacking) is controlled by z-index.
+            <ul>
+                <li>It controlls the z axis order of positioned elements (position: relative/absolute/fixed/sticky;) and their descendants.</li>
+                <li>The default is z-index: 0;</li>
+                <li>Follows traditional numerics.</li>
+                <li>You can use negative z-indexs.</li>
+                <li>If the container is position: relative; and you set z-index: 0;, the content within the container will never go behind the container.</li>
             </ul>
         </li>
     </ul>
