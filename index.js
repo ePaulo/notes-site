@@ -20,6 +20,8 @@ const miscSectionEl = document.getElementById("misc-section");
 //DOM reference for current subject
 const currentSubjectEl = document.getElementById("current-subject");
 
+console.log(htmlSubjectBtn)
+
 //Initial state
 currentSubjectEl.textContent = htmlSubjectBtn.textContent;
 htmlSectionEl.removeAttribute("hidden");
@@ -27,7 +29,7 @@ htmlSectionEl.removeAttribute("hidden");
 //Event listeners
 htmlSubjectBtn.addEventListener('click', () =>
   switchTitle(htmlSubjectBtn, htmlSectionEl),
-  $("#html-section").load("htmlNotes.html")
+  // $("#html-section").load("htmlNotes.html")
 )
 
 cssSubjectBtn.addEventListener('click', () =>
