@@ -1,31 +1,31 @@
 /***LOADS CONTENT */
 const pageloads = [];
 
-pageloads.push(Promise((resolve, reject) => {
+pageloads.push(new Promise((resolve, reject) => {
     $("#html-section").load("./htmlNotes.html", {}, () => resolve(true));
 }))
 
-pageloads.push(Promise((resolve, reject) => {
+pageloads.push(new Promise((resolve, reject) => {
     $("#css-section").load("./cssNotes.html", {}, () => resolve(true));
 }))
 
-pageloads.push(Promise((resolve, reject) => {
+pageloads.push(new Promise((resolve, reject) => {
     $("#js-section").load("./jsNotes.html", {}, () => resolve(true));
 }))
 
-pageloads.push(Promise((resolve, reject) => {
+pageloads.push(new Promise((resolve, reject) => {
     $("#firebase-section").load("./firebaseNotes.html", {}, () => resolve(true));
 }))
 
-pageloads.push(Promise((resolve, reject) => {
+pageloads.push(new Promise((resolve, reject) => {
     $("#react-section").load("./reactNotes.html", {}, () => resolve(true));
 }))
 
-pageloads.push(Promise((resolve, reject) => {
+pageloads.push(new Promise((resolve, reject) => {
     $("#code-review-section").load("./codeReviewsNotes.html", {}, () => resolve(true));
 }))
 
-pageloads.push(Promise((resolve, reject) => {
+pageloads.push(new Promise((resolve, reject) => {
     $("#misc-section").load("./miscNotes.html", {}, () => resolve(true));
 }))
 
