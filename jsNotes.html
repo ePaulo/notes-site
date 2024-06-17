@@ -121,6 +121,120 @@
                 <li><blockcode>elementName.style.what you want to change = "what you want to change it to"</blockcode></li>
             </ul>
         </li>
+        <li>To override the form information being pushed into the URL query screen,
+            <blockcode>
+                formElement.addEventListener('submit', function(event){
+                    event.preventDefault();
+                })
+            </blockcode>
+        </li>
+        <li>To take control of an element is to call the element.</li>
+        <li>Any button in a form will submit by default. To stop this change the type. <blockcode>type="reset, submit, button"</blockcode></li>
+        <li>It's best practice to not declare something unless you have to.</li>
+        <li>It's best practice to only use innerHTML when you have to. Use innerText instead.</li>
+        <li class="sub-list"><span>FormData</span>
+            <ul>
+                <li><blockcode>FormData(formElement)</blockcode></li>
+                <li>Returns all inputed data into an object.</li>
+                <li>Is a constructor function.</li>
+                <li><blockcode>const formElementData = new FormData(formElement)</blockcode></li>
+                <li>To see what the object holds use <blockcode>formElementData.get(nameData)</blockcode></li>
+            </ul>
+        </li>
+        <li class="sub-list"><span>Disabling Elements</span>
+            <ul>
+                <li>Controlling when elements are usable.</li>
+                <li>To disable on page load add <blockcode>disabled</blockcode> to HTML tag.</li>
+                <li>To disable after load, set disabled to true.</li>
+            </ul>
+        </li>
+        <li class="sub-list"><span>Class List</span>
+            <ul>
+                <li><blockcode>element.classList.action('className')</blockcode></li>
+                <li>Just <blockcode>element.classList</blockcode> will return the entire class list of the element.</li>
+                <li><blockcode>
+                        element.classList.toggle('className')
+                    </blockcode>
+                    will add and remove the className from the element.
+                </li>
+                <li><blockcode>
+                    element.classList.remove('className') will remove className from the elements class list.
+                    </blockcode>
+                </li>
+                <li><blockcode>
+                    element.classList.add('className') will add className to the elements class list.
+                    </blockcode>
+                </li>                
+            </ul>
+        </li>
+        <li>element.classList.toggle('className') switches the usage of the classlist back and forth.</li>
+        <li class="sub-list"><span>for of</span>
+            <ul>
+                <li>A nicer way of iterating.</li>
+                <il><blockcode>
+                    for (let item of items) {
+
+                    }
+                </blockcode></il>
+            </ul>
+        </li>
+        <li>Each function should do one thing.</li>
+        <li>To link a js file to another js file, put export in front of the information you want to export, and in the file you want the information in
+            write <blockquote>import { information you want to export },from './fileThatHasInfo'</blockquote>, and in the HTML fyle add <blockcode>
+            import = "module"</blockcode>.
+        </li>
+        <li class="sub-list"><span><blockcode>.includes()</blockcode></span>
+            <ul>
+                <li>A method for checking if an array holds a given value.</li>
+                <li>level: easy</li>
+                <li>returns boolean</li>
+            </ul>
+        </li>
+        <li>render() ---???????</li>
+        <li class="sub-list"><span><blockcode>event.target.id</blockcode></span>
+            <ul>
+                <li><blockcode>
+                    container.addEventListener('click', function(event){
+                        console.log(event.target.id)
+                    })
+                </blockcode></li>
+                <li>If you log event, you will see PointerEvent{ isTrusted: boolean }</li>
+                <li>The target will show the most exact location it can (p.className#idName).</li>
+                <li>An empty area in the container will return a string.</li>
+                <li>event.target.id would return just the id of what was clicked.</li>
+                <li>adding <blockcode>.parentElement</blockcode> to the end of what your selecting <blockcode>(event.target.id).parentElement</blockcode>
+                    will return the parent element of the element that had an event. So 
+                    <blockcode>
+                        &lt;div class="parent-element"&gt;
+                            &lt;div id="childElement"&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    </blockcode> 
+                    would return <blockcode>&lt;div class="parent-element"&gt;</blockcode>.
+                </li>
+                <li><blockcode>event.target</blockcode> will return the entire tag.</li>
+            </ul>
+        </li>
+        <li class="sub-list"><span>Event Listeners</span>
+            <ul>
+                <li><blockcode>container.addEventListener('listenerOfChoice', function{})</blockcode></li>
+                <li>click</li>
+                <li>dblclick</li>
+                <li>change</li>
+                <li><a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank" alt="List of all the possible events">Events I have never used.</a></li>
+            </ul>
+        </li>
+        <li class="sub-list"><span>Parent Element</span>
+            <ul>
+                <li><blockcode>.parentElement</blockcode></li>
+                <li>add to the end of </li>
+            </ul>
+        </li>
+        <li class="sub-list">
+            <ul>
+                <li>To one element with a given id use <blockcode>getElementByid('idName')</blockcode>.</li>
+                <li>To grab all elements with a given class use <blockcode>getElementsByClassName('className')</blockcode>.</li>
+            </ul>
+        </li>"
     </ul>
 </div>
 <div class="accordion">
@@ -166,6 +280,8 @@
             <dd>Example: <blockcode>document.createElement("li")</blockcode></dd>
         <dt>Template Strings</dt>
             <dd><blockcode>`html stuff and also text and also ${variables}`</blockcode></dd>
+        <dt>Logical Not</dt>
+            <dd>Puting ! to mean not the following code.</dd>
     </dl>
 </div>
 <div class="accordion">
@@ -176,5 +292,21 @@
         <li>What does i in the for loop mean?</li>
         <li>Long but accurate function names, yes or no?</li>
         <li>Is it bad practice to put a setTimeout method wihtin another setTimeout method?</li>
+        <li>Defining everything before using it or defining everything?<br />
+            <blockcode>
+                let target = e.target.id
+                console.log(target)
+            </blockcode> or
+            <blockcode>
+                console.log(e.target.id)
+            </blockcode>
+        </li>
+    </ul>
+</div>
+
+<div class="accordion">
+    <h3 class="accordion-name">Opinions<span class="accordion-arrow"></span></h3>
+    <ul class="inner-accordion-content">        
+        <li>You should separate functions from event listeners (call the function withing the event listener istead of writing it there.</li>
     </ul>
 </div>

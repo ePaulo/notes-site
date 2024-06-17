@@ -1,40 +1,40 @@
 /***LOADS CONTENT */
-const pageloads = [];
+// const pageloads = [];
 
-pageloads.push(new Promise((resolve, reject) => {
-    $("#html-section").load("./htmlNotes.html", () => resolve(true));
-}))
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#html-section").load("./htmlNotes.html", () => resolve(true));
+// }))
 
-pageloads.push(new Promise((resolve, reject) => {
-    $("#css-section").load("./cssNotes.html", () => resolve(true));
-}))
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#css-section").load("./cssNotes.html", () => resolve(true));
+// }))
 
-pageloads.push(new Promise((resolve, reject) => {
-    $("#js-section").load("./jsNotes.html", () => resolve(true));
-}))
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#js-section").load("./jsNotes.html", () => resolve(true));
+// }))
 
-pageloads.push(new Promise((resolve, reject) => {
-    $("#firebase-section").load("./firebaseNotes.html", () => resolve(true));
-}))
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#firebase-section").load("./firebaseNotes.html", () => resolve(true));
+// }))
 
-pageloads.push(new Promise((resolve, reject) => {
-    $("#react-section").load("./reactNotes.html", () => resolve(true));
-}))
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#react-section").load("./reactNotes.html", () => resolve(true));
+// }))
 
-pageloads.push(new Promise((resolve, reject) => {
-    $("#code-review-section").load("./codeReviewsNotes.html", () => resolve(true));
-}))
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#code-review-section").load("./codeReviewsNotes.html", () => resolve(true));
+// }))
 
-pageloads.push(new Promise((resolve, reject) => {
-    $("#misc-section").load("./miscNotes.html", () => resolve(true));
-}))
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#misc-section").load("./miscNotes.html", () => resolve(true));
+// }))
 
-async function loadPage() {
-    await Promise.all(pageloads);
-    onPageLoad();
-}
+// async function loadPage() {
+//     await Promise.all(pageloads);
+//     onPageLoad();
+// }
 
-function onPageLoad(){
+// function onPageLoad(){
     /**change title to reflect current subject */
     //DOM references for buttons
     const htmlSubjectBtn = document.getElementById("html-subject");
@@ -63,32 +63,32 @@ function onPageLoad(){
 
     //Event listeners
     htmlSubjectBtn.addEventListener('click', () =>
-    switchTitle(htmlSubjectBtn, htmlSectionEl),
+        switchTitle(htmlSubjectBtn, htmlSectionEl),
     // $("#html-section").load("htmlNotes.html")
     )
 
     cssSubjectBtn.addEventListener('click', () =>
-    switchTitle(cssSubjectBtn, cssSectionEl),
+        switchTitle(cssSubjectBtn, cssSectionEl),
     )
 
     jsSubjectBtn.addEventListener('click', () =>
-    switchTitle(jsSubjectBtn, jsSectionEl),
+        switchTitle(jsSubjectBtn, jsSectionEl),
     )
 
     firebaseSubjectBtn.addEventListener('click', () =>
-    switchTitle(firebaseSubjectBtn, firebaseSectionEl),
+        switchTitle(firebaseSubjectBtn, firebaseSectionEl),
     )
 
     reactSubjectBtn.addEventListener('click', () =>
-    switchTitle(reactSubjectBtn, reactSectionEl),
+        switchTitle(reactSubjectBtn, reactSectionEl),
     )
 
     codeReviewSubjectBtn.addEventListener('click', () =>
-    switchTitle(codeReviewSubjectBtn, codeReviewSectionEl),
+        switchTitle(codeReviewSubjectBtn, codeReviewSectionEl),
     )
 
     miscSubjectBtn.addEventListener('click', () =>
-    switchTitle(miscSubjectBtn, miscSectionEl),
+        switchTitle(miscSubjectBtn, miscSectionEl),
     )
 
     // Functions
@@ -143,5 +143,5 @@ function onPageLoad(){
      * 6. make mobile friendly
      * 7. make mobile "app"
      */
-}
+// }
 
