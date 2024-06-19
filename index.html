@@ -149,8 +149,24 @@
                             <li>Most HTML files load from top to bottom, put script tags for JS at bottom of the file, below the main tag, so the DOM elements have loaded.</li>
                             <li>Add aria-label when you have inputs but don't want labels.</li>
                             <li>To connect a label and input write <blockcode>&lt;label for="name"&gt;&lt;&lt;/label&gt;&lt;input value="name" /&gt;</blockcode></li>
-                            <li>To write a radio btn write <blockcode>&lt;label for="name">&lt;</blockcode>label?&gt;&lt;input value="name" name="connectingRadioBtns"/&gt;
+                            <li>To write a radio btn write <blockcode>&lt;label for="name"&gt;&lt;label?&gt;&lt;input value="name" name="connectingRadioBtns"/&gt;
                                 </blockcode></li>
+                            <li>To write a checkbox btn write <blockcode>&lt;input type="checkbox" id="idName"&gt;</blockcode>.</li>
+                            <li>To write a dropdown (the select element) write <blockcode>
+                                &lt;label for="name"&gt;&lt;/label&gt;
+                                &lt;select id="name" size="3"(opens dropdown) multiple(not accessible)&gt;
+                                    &lt;optgroup label="groupOneLabel"&gt;
+                                        &lt;option value="optionOne" selected&gt;optionOne&lt;/option&gt;
+                                        &lt;option value="optionTwo"&gt;optionTwo&lt;/option&gt;
+                                        &lt;option value="optionThree"&gt;optionThree&lt;/option&gt;
+                                    &lt;optgroup&gt;
+                                    &lt;optgroup label="groupTwoLabel"&gt;
+                                        &lt;option value="optionOne" selected&gt;optionOne&lt;/option&gt;
+                                        &lt;option value="optionTwo"&gt;optionTwo&lt;/option&gt;
+                                        &lt;option value="optionThree"&gt;optionThree&lt;/option&gt;
+                                    &lt;optgroup&gt;
+                                &lt;/select&gt;
+                            </blockcode></li>
                         </ul>
                     </div>
                     <div class="accordion">
@@ -758,11 +774,7 @@
                             <li class="sub-list"><span>for of</span>
                                 <ul>
                                     <li>A nicer way of iterating.</li>
-                                    <il><blockcode>
-                                        for (let item of items) {
-
-                                        }
-                                    </blockcode></il>
+                                    <il><blockcode>for (let item of items) {}</blockcode></il>
                                 </ul>
                             </li>
                             <li>Each function should do one thing.</li>
@@ -816,10 +828,12 @@
                                     <li>add to the end of </li>
                                 </ul>
                             </li>
-                            <li class="sub-list">
+                            <li class="sub-list"><span>Grabbing Elements</span>
                                 <ul>
                                     <li>To one element with a given id use <blockcode>getElementByid('idName')</blockcode>.</li>
                                     <li>To grab all elements with a given class use <blockcode>getElementsByClassName('className')</blockcode>.</li>
+                                    <li>To grab any element use <blockcode>querySelector('whatYouWant')</blockcode>, this is unique because it can grab
+                                    psudo selectors.</li>
                                 </ul>
                             </li>
                             <li class="sub-list"><span>Console Log</span>
@@ -829,6 +843,18 @@
                                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/log_static" target="_blank" alt="Shows distant sytnax.">
                                         Check the Static Method
                                     </a></li>
+                                </ul>
+                            </li>
+                            <li>To get wether or not an item was checked, get the element and add <blockcode>.checked</blockcode> like <blockcode>element.checked
+                                </blockcode></li>
+                            <li>When naming a boolean, it is common to start the name with is or has. <blockcode>const isChecked = document.querySelector('input[type="radio"]:checked')
+                                .value</blockcode></li>
+                            <li class="sub-list"><span>The Filter Method</span>
+                                <ul>
+                                    <li><blockcode>oldArray.filter(function(arrayItemName){return arrayItemName})</blockcode></li>
+                                    <li>Getting only the elements we want from an array.</li>
+                                    <li>Creates a new array.</li>
+                                    <li>To filter an array of objects, </li>
                                 </ul>
                             </li>
                         </ul>
@@ -1140,7 +1166,8 @@
                                     <li>To one element with a given id use <blockcode>getElementByid('idName')</blockcode>.</li>
                                     <li>To grab all elements with a given class use <blockcode>getElementsByClassName('className')</blockcode>.</li>
                                 </ul>
-                            </li>"
+                            </li>
+                            <li>You can usually get rid of an <blockcode>else</blockcode> if you are returning in the <blockcode>if</blockcode>.</li>
                         </ul>
                     </div>
                     <div class="accordion">
