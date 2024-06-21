@@ -1,96 +1,147 @@
-// DOM references for buttons
-const htmlSubjectBtn = document.getElementById('html-subject')
-const cssSubjectBtn = document.getElementById('css-subject')
-const jsSubjectBtn = document.getElementById('js-subject')
-const firebaseSubjectBtn = document.getElementById('firebase-subject')
-const reactSubjectBtn = document.getElementById('react-subject')
-const codeReviewSubjectBtn = document.getElementById('code-reviews-subject')
-const miscSubjectBtn = document.getElementById('misc-subject')
+/***LOADS CONTENT */
+// const pageloads = [];
 
-// DOM references for sections
-const htmlSectionEl = document.getElementById('html-section')
-const cssSectionEl = document.getElementById('css-section')
-const jsSectionEl = document.getElementById('js-section')
-const firebaseSectionEl = document.getElementById('firebase-section')
-const reactSectionEl = document.getElementById('react-section')
-const codeReviewSectionEl = document.getElementById('code-review-section')
-const miscSectionEl = document.getElementById('misc-section')
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#html-section").load("./htmlNotes.html", () => resolve(true));
+// }))
 
-// DOM reference for current subject
-const currentSubjectEl = document.getElementById('current-subject')
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#css-section").load("./cssNotes.html", () => resolve(true));
+// }))
 
-// Initial state
-currentSubjectEl.textContent = htmlSubjectBtn.textContent
-htmlSectionEl.removeAttribute('hidden')
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#js-section").load("./jsNotes.html", () => resolve(true));
+// }))
 
-// Event listeners
-htmlSubjectBtn.addEventListener('click', () =>
-  switchTitle(htmlSubjectBtn, htmlSectionEl),
-)
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#firebase-section").load("./firebaseNotes.html", () => resolve(true));
+// }))
 
-cssSubjectBtn.addEventListener('click', () =>
-  switchTitle(cssSubjectBtn, cssSectionEl),
-)
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#react-section").load("./reactNotes.html", () => resolve(true));
+// }))
 
-jsSubjectBtn.addEventListener('click', () =>
-  switchTitle(jsSubjectBtn, jsSectionEl),
-)
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#code-review-section").load("./codeReviewsNotes.html", () => resolve(true));
+// }))
 
-firebaseSubjectBtn.addEventListener('click', () =>
-  switchTitle(firebaseSubjectBtn, firebaseSectionEl),
-)
+// pageloads.push(new Promise((resolve, reject) => {
+//     $("#misc-section").load("./miscNotes.html", () => resolve(true));
+// }))
 
-reactSubjectBtn.addEventListener('click', () =>
-  switchTitle(reactSubjectBtn, reactSectionEl),
-)
+// async function loadPage() {
+//     await Promise.all(pageloads);
+//     onPageLoad();
+// }
 
-codeReviewSubjectBtn.addEventListener('click', () =>
-  switchTitle(codeReviewSubjectBtn, codeReviewSectionEl),
-)
+// function onPageLoad(){
+    /**change title to reflect current subject */
+    //DOM references for buttons
+    const htmlSubjectBtn = document.getElementById("html-subject");
+    const cssSubjectBtn = document.getElementById("css-subject");
+    const jsSubjectBtn = document.getElementById("js-subject");
+    const firebaseSubjectBtn = document.getElementById("firebase-subject");
+    const reactSubjectBtn = document.getElementById("react-subject");
+    const codeReviewSubjectBtn = document.getElementById("code-reviews-subject");
+    const miscSubjectBtn = document.getElementById("misc-subject");
 
-miscSubjectBtn.addEventListener('click', () =>
-  switchTitle(miscSubjectBtn, miscSectionEl),
-)
+    //DOM references for sections
+    const htmlSectionEl = document.getElementById("html-section");
+    const cssSectionEl = document.getElementById("css-section");
+    const jsSectionEl = document.getElementById("js-section");
+    const firebaseSectionEl = document.getElementById("firebase-section");
+    const reactSectionEl = document.getElementById("react-section");
+    const codeReviewSectionEl = document.getElementById("code-review-section");
+    const miscSectionEl = document.getElementById("misc-section");
 
-// Functions
-function switchTitle(subjectBtn, sectionEl) {
-  currentSubjectEl.textContent = subjectBtn.textContent
+    //DOM reference for current subject
+    const currentSubjectEl = document.getElementById("current-subject");
 
-  htmlSectionEl.hidden = true
-  cssSectionEl.hidden = true
-  jsSectionEl.hidden = true
-  firebaseSectionEl.hidden = true
-  reactSectionEl.hidden = true
-  codeReviewSectionEl.hidden = true
-  miscSectionEl.hidden = true
+    //Initial state
+    currentSubjectEl.textContent = htmlSubjectBtn.textContent;
+    htmlSectionEl.removeAttribute("hidden");
 
-  sectionEl.hidden = false
-}
-
-/**Accordion */
-let accordionContainer = document.getElementsByClassName('accordion')
-let accordionName = document.getElementsByClassName('accordion-name')
-let accordionArrow = document.getElementsByClassName('accordion-arrow')
-let firstAccordionEl = document.getElementsByClassName('first-accordion')
-let firstAccordionArrow = document.getElementsByClassName('first-arrow')
-
-for (let i = 0; i < accordionContainer.length; i++) {
-  accordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-down"></i>`
-  accordionName[i].addEventListener('click', function () {
-    let accordionContent = document.getElementsByClassName(
-      'inner-accordion-content',
+    //Event listeners
+    htmlSubjectBtn.addEventListener('click', () =>
+        switchTitle(htmlSubjectBtn, htmlSectionEl),
+    // $("#html-section").load("htmlNotes.html")
     )
-    accordionName[i].classList.toggle('active')
-    if (accordionContent[i].style.display === 'block') {
-      accordionContent[i].style.display = 'none'
-      accordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-down"></i>`
-    } else {
-      accordionContent[i].style.display = 'block'
-      accordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-up"></i>`
-    }
-  })
-}
 
-for (let i = 0; i < firstAccordionArrow.length; i++) {
-  firstAccordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-up"></i>`
-}
+    cssSubjectBtn.addEventListener('click', () =>
+        switchTitle(cssSubjectBtn, cssSectionEl),
+    )
+
+    jsSubjectBtn.addEventListener('click', () =>
+        switchTitle(jsSubjectBtn, jsSectionEl),
+    )
+
+    firebaseSubjectBtn.addEventListener('click', () =>
+        switchTitle(firebaseSubjectBtn, firebaseSectionEl),
+    )
+
+    reactSubjectBtn.addEventListener('click', () =>
+        switchTitle(reactSubjectBtn, reactSectionEl),
+    )
+
+    codeReviewSubjectBtn.addEventListener('click', () =>
+        switchTitle(codeReviewSubjectBtn, codeReviewSectionEl),
+    )
+
+    miscSubjectBtn.addEventListener('click', () =>
+        switchTitle(miscSubjectBtn, miscSectionEl),
+    )
+
+    // Functions
+    function switchTitle(subjectBtn, sectionEl) {
+    currentSubjectEl.textContent = subjectBtn.textContent
+
+    htmlSectionEl.hidden = true
+    cssSectionEl.hidden = true
+    jsSectionEl.hidden = true
+    firebaseSectionEl.hidden = true
+    reactSectionEl.hidden = true
+    codeReviewSectionEl.hidden = true
+    miscSectionEl.hidden = true
+
+    sectionEl.hidden = false
+    }
+
+    /**Accordion */
+    let accordionContainer = document.getElementsByClassName("accordion");
+    let accordionName = document.getElementsByClassName("accordion-name");
+    let accordionArrow = document.getElementsByClassName("accordion-arrow");
+    let firstAccordionEl = document.getElementsByClassName("first-accordion");
+    let firstAccordionArrow = document.getElementsByClassName("first-arrow");
+
+    for (let i = 0; i < accordionContainer.length; i++){
+    accordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-down"></i>`;
+    accordionName[i].addEventListener("click", function() {
+        let accordionContent = document.getElementsByClassName("inner-accordion-content");
+        accordionName[i].classList.toggle("active");
+        if (accordionContent[i].style.display === "block") {
+        accordionContent[i].style.display = "none";
+        accordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-down"></i>`;
+        } else {
+        accordionContent[i].style.display = "block";
+        accordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-up"></i>`;
+        }
+    });
+    
+    };
+
+    for (let i = 0; i < firstAccordionArrow.length; i++) {
+        firstAccordionArrow[i].innerHTML = `<i class="fa-solid fa-angle-up"></i>`; 
+    }
+
+
+    /***TODOs
+     * 1. take mentos advice and refactor notes
+     * 2. set up notes to use separate pages
+     * 3. set up firebase for inputs
+     * 4. move header menu
+     * 5. refactor background to be in separate div
+     * 6. make mobile friendly
+     * 7. make mobile "app"
+     */
+// }
+

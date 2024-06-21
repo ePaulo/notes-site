@@ -1,0 +1,333 @@
+<h2>CSS</h2>
+<p>Cascading style sheets</p>
+<p>Used for aesthetic design</p>
+<ul>
+    <li>Colors</li>
+    <li>Backgrounds</li>
+    <li>Variables</li>
+    <li>Fonts</li>
+</ul>
+<div class="accordion first-accordion">
+    <h3 class="accordion-name">Notes<span class="accordion-arrow first-arrow"></span></h3>
+    <ul class="inner-accordion-content" style="display: block;">
+        <li><blockcode>font-weight: lighter, normal, or bold</blockcode></li>
+        <li><blockcode>display: inline;</blockcode> stacks items beside eachother horizontally.</li>
+        <li><blockcode>display: block;</blockcode> stacks items on top of eachother vertically, each item takes up full width.</li>
+        <li>Browser assumes body tag wants margin around.</li>
+        <li>Margin will collapse into eachother, largest margin will take presidence.</li>
+        <li>To center an element <blockcode>display: block; width: whatever; margin-left: auto; margin-right: auto;</blockcode>.</li>
+        <li>Use <blockcode>line-height</blockcode> instead of <blockcode>height</blockcode> for input fields because more browsers will honor it</li>
+        <li class="sub-list"><span><a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_blank"
+                alt="brings user to bootstraps documentation on how to use flexbox">Flexbox</a> is god.</span>
+            <ul>
+                <li><blockcode>justify-content: start, center, end, space-around, space-evenly, space-between;</blockcode> controls right to left (main axis)</li>
+                <li><blockcode>gap: top right bottom left px;</blockcode></li>
+                <li>Only affects direct children (if you don't want something effected, change it to be within divs).</li>
+                <li><blockcode>flex-direction: column, row;</blockcode> has default value row, changing to column will switch the align items and display-content 
+                    axis.
+                </li>
+                <li><blockcode>align-items: start, center, end;</blockcode> controls top to bottom (cross axis), has default value stretch.</li>
+                <li><blockcode>flex-wrap: wrap, nowrap, wrap-reverse;</blockcode> keeps the items in the defined max-width and pushes items to a new line.</li>
+                <li><blockcode>flex-grow: 1;</blockcode> used on the child item, will increase the width of the item to the full width.</li>
+                <li>Setting <blockcode>margin: auto;</blockcode> anywhere will push the item to the oposite side.</li>
+                <li><blockcode>align-self: flex-end, flex-start, stretch(default), center;</blockcode> allows you to set the vertical alignment of an individual 
+                    element inside a flexbox.
+                </li>
+                <li><blockcode>display: flex;</blockcode> as parent element and <blockcode>margin: auto;</blockcode> as child element centers element.</li>
+            </ul>
+        </li>
+        <li>Divs are <blockcode>display: block;</blockcode> by default.</li>
+        <li>Don't use pure black or pure white because it will block/show all light emitted from the screen, making it difficult for your viewers.</li>
+        <li><blockcode>background-size: cover;</blockcode> will make the background the width of the container.</li>
+        <li>Buttons and inputs don't inherit font-family. Use <blockcode>font-family: inherit;</blockcode></li>
+        <li>The span tag is <blockcode>display: inline;</blockcode></li>
+        <li>Use id for unique elements that will only be used once.</li>
+        <li>Use classes for elements that will be reused.</li>
+        <li>.webp is similar to .gif, but is more compressed.</li>
+        <li><blockcode>text-shadow: horizontal-line vertical-line blur color;</blockcode></li>
+        <li>You can't force the width or height of an inline element.</li>
+        <li><blockcode>div</blockcode>s are <blockcode>display: block;</blockcode></li>
+        <li>WAI-ARIA is used to make background images more accessible. Add a role attribute to the section your background-image is on and set it to img. 
+            (<blockcode>role="img"</blockcode>") then add the aria-label attribute (<blockcode>aria-label="description"</blockcode>). This is used as a supliment 
+            to semantic HTML, not a replacement.
+        </li>
+        <li>The <blockcode>em</blockcode> tag adds symantic meaning, screen readers can emphasize.</li>
+        <li>Add audio by using <blockcode>audio</blockcode> tag, and controls. You can add an anchor tag between the audio tags as a backup incase the audio 
+            fails. Put a <blockcode>source</blockcode> tag between the audio tags and add the src attribute in order to have multiple sources. You can also 
+            add a type attribute audio/mp3 or audio/wav. Otherwise just add the src attribute to the audio tag.
+        </li>
+        <li><blockcode>video</blockcode> is the same as audio. Video width and height should always be set to pixels. This saves the required space on the page, 
+            without a fixed height and width the layout can change when the file loads.
+        </li>
+        <li>Video and audio specific attributes: controls, muted, loop, autoplay.</li>
+        <li>HTML tables are for structuring tabular data (informatin presented in a 2d table comprised of rows and columns of cells).</li>
+        <li>Don't use tables to create layouts, or literally for anything else basides tabular data.</li>
+        <li><blockcode>thead</blockcode> <blockcode>tbody</blockcode> and <blockcode>tfoot</blockcode> improves accessibility.</li> 
+        <li>The <blockcode>colspan</blockcode> attribute determines how many columns table data takes up.</li>
+        <li>The <blockcode>rowspan</blockcode> attribute determines how many rows table data takes up.</li>
+        <li>The <blockcode>caption</blockcode> tag is the title of a table. It should be the first child of the table.</li>
+        <li>The scope attribute is used to tell screen readers exactly what cells the header is a header for. add next to th</li>
+        <li>320px is pretty good for almost every mobile device width wise.</li>
+        <li>Abbreviations aren't always helpful.</li>
+        <li><blockcode>id</blockcode>s shouldn't be used for styling.</li>
+        <li><blockcode>user-selec: none;</blockcode> stops users from highlighting the text. Only use in very specific senarios.</li>
+        <li><blockcode>box-sizing: border-box;</blockcode> gets item to fill width with margin, padding, and border included.</li>
+        <li class="sub-list"><span>The <blockcode>dialog</blockcode> tag</span>
+            <ul>
+                <li><blockcode>dialog {}</blockcode></li>
+                <li><blockcode>dialog::backdrop{}</blockcode></li>
+            </ul>
+        </li>
+        <li><blockcode>text-decoration: underline, overline</blockcode></li>
+        <li>The <blockcode>:focus</blockcode> state is for people who navigate with a keyboard, place it with the <blockcode>:hover</blockcode> state, it should 
+            be above <blockcode>:active</blockcode> state.
+        </li>
+        <li class="sub-list"><span>To determine what state to use LOVEHATE Link visited hover active.</span>
+            <ul>
+                <li>Love is LV.</li>
+                <li>Hate is HA.</li>
+                <li>L is for <blockcode>:link</blockcode></li>
+                <li>V is for <blockcode>:visited</blockcode></li>
+                <li>H is for <blockcode>:hover</blockcode></li>
+                <li>A is for <blockcode>:active</blockcode></li>
+            </ul>
+        </li>
+        <li><blockcode>text-decoration-style: solid, double, dotted, dashed, wavy;</blockcode></li>
+        <li class="sub-lsit"><span>CSS Points</span>
+            <ul>
+                <li>Element = 1 point</li>
+                <li>Class = 10 points</li>
+                <li>Id = 100 points</li>
+                <li>Add the total together for compound selectors total points.</li>
+            </ul>
+        </li>
+        <li class="sub-list"><span>Compound Selectors</span>
+            <ul>
+                <li>Using multiple selectors to select one element.</li>
+                <li>Controversial because devs hate doing math.</li>
+            </ul>
+        </li>
+        <li class="sub-list"><span><blockcode>!important</blockcode></span>
+            <ul>
+                <li>Often misused (by me).</li>
+                <li>Disrupts the natural cascading reading of css.</li>
+                <li>Good for custom css from user for accessibility.</li>
+            </ul>
+        </li>
+        <li>Don't be too specific with class names, like colors in name, you might change colors.</li>
+        <li class="sub-list"><span>Block Elements</span>
+            <ul>
+                <li>Stack on top of eachother.</li>
+                <li><blockcode>&lt;div&gt;</blockcode>, <blockcode>&lt;p&gt;</blockcode>, <blockcode>&lt;h1&gt;</blockcode>, etc. are all examples of block 
+                    elements.
+                </li>
+                <li>You can set the height and margin top and bottom.</li>
+            </ul>
+        </li>
+        <li class="sub-list"><span>Inline Elements</span>
+            <ul>
+                <li>They sit side by side.</li>
+                <li><blockcode>&lt;span&gt;</blockcode> and <blockcode>&lt;a&gt;</blockcode> are examples of inline elements.</li>
+                <li>You can't set the height and margin top and bottom.</li>
+            </ul>
+        </li>
+        <li><span>Inline-block Elements</span>
+            <ul>
+                <li>Sit side by side.</li>
+                <li><blockcode>&lt;button&gt;</blockcode> and <blockcode>&lt;input&gt;</blockcode> are examples of inline-block elements.</li>
+                <li>You can set height and margin top and bottom.</li>
+            </ul>
+        </li>
+        <li class="sub-list"><span>Multiple Classes on the same element.</span>
+            <ul>
+                <li>List in html with space between them.</li>
+            </ul>
+        </li>
+        <li class="sub-list"><span>Overflow</span>
+            <ul>
+                <li>Default is visible (ugly).</li>
+                <li><blockcode>overflow: hidden;</blockcode> hides the excess content, useful for maintaineing the layout but can lead to inaccessbile content.</li>
+                <li><blockcode>overflow: scroll;</blockcode> adds a scrollbar to the container even if there is no overflow.</li>
+                <li><blockcode>overflow: auto;</blockcode> adds a scrollbar only when there is an overflow.</li>
+                <li>overflow-x and overflow-y control the overflow behavior separately for horizontal and vertical content, except x cannot be hidden while y is 
+                    visible.
+                </li>
+            </ul>
+        </li>
+        <li class="sub-list"><span>Floats</span>
+            <ul>
+                <li><blockcode>clear: left;</blockcode> means nothing will float to the left of the item.</li>
+                <li>Float is good used for drop caps, floating quotes, floating information boxes.</li>
+                <li>float but keep item in container, use <blockcode>display: flow-root;</blockcode>.</li>
+            </ul>
+        </li>
+        <li>Can use CSS to hide an element (bit complex) to make the element used for screen readers only.</li>
+        <li>inverse is a common class name for dark backgrounds with light text next to light backgrounds with dark text.</li>
+        <li class="sub-list"><span><blockcode>position: absolute;</blockcode></span>
+            <ul>
+                <li>Use on the child element.</li>
+                <li>Put <blockcode>position: relative;</blockcode> on parent the element so the child element stays within the container.</li>
+                <li>Use <blockcode>top: ;</blockcode>, <blockcode>left: ;</blockcode>, <blockcode>bottom: ;</blockcode>, and <blockcode>right: ;</blockcode> 
+                    to move child element.
+                </li>
+                <li>Use to position an element relative to a containing element. The element scrolls with the content.</li>
+            </ul>
+        </li>
+        <li class="sub-list"><span><blockcode>position: fixed;</blockcode></span>
+            <ul>
+                <li>Needs a <blockcode>top: ;</blockcode>, <blockcode>left: ;</blockcode>, <blockcode>bottom: ;</blockcode>, and <blockcode>right: ;</blockcode>. 
+                    Add <blockcode>margin: auto;</blockcode> to center it completely.
+                </li>
+                <li>Use this to lock an element in a position relative to the window. It maintains that position even when scrolling.</li>
+                <li>This is not part of main or header content.</li>
+            </ul>
+        </li>
+        <li>If you have white space under an image change it to <blockcode>display: block;</blockcode>.</li>
+        <li>z-axis (content stacking) is controlled by <blockcode>z-index</blockcode>.
+            <ul>
+                <li>It controlls the z axis order of positioned elements (<blockcode>position: relative, absolute, fixed, sticky;</blockcode>) and their 
+                    descendants.
+                </li>
+                <li>The default is <blockcode>z-index: 0;</blockcode>.</li>
+                <li>Follows traditional numerics.</li>
+                <li>You can use negative z-indexs.</li>
+                <li>If the container is <blockcode>position: relative;</blockcode> and you set <blockcode>z-index: 0;</blockcode>, the content within the 
+                    container will never go behind the container.
+                </li>
+            </ul>
+        </li>
+        <li class="sub-list"><span>flex-direction: row-reverse;</span>
+            <ul>
+                <li>Changing the order of elements.</li>
+            </ul>
+        </li>
+        <li>To change the color of a radio button checkbox thing, use <blockcode>accent-color: hexCode;</blockcode>.</li>
+    </ul>
+</div>
+<div class="accordion">
+    <h3 class="accordion-name">Resources<span class="accordion-arrow"></span></h3>
+    <dl class="inner-accordion-content">
+        <dt><a href="https://userway.org/contrast/?fg=f8f9fa&bg=ffffff" target="_blank"
+                alt="goes to the userway site, which is a contrast checker for accessibility">User
+                Way</a></dt>
+            <dd>Checks the contrast of two colors to see if it's accessible.</dd>
+        <dt><a href="https://coolors.co/" target="_blank"
+                alt="coolors, the super fast color generator">Coolors</a></dt>
+            <dd>Generates random colors and pallets for designers.</dd>
+            <dd>Has a tool that can choose colors from an image.</dd>
+        <dt><a href="unsplash.com" target="_blank" alt="Free to use images">Unsplash</a></dt>
+            <dd>The internets source of freely-usable images.</dd>
+        <dt><a href="https://fonts.google.com/" target="_blank"
+                alt="a bunch of fonts supported by Google">Google Fonts</a></dt>
+            <dd>A bunch of fonts supported by google.</dd>
+            <dd>Place link text in head of HTML.</dd>
+            <dd>Add font family to CSS.</dd>
+        <dt><a href="https://www.1001fonts.com/" target="_blank" alt="a bunch of free fonts">1001
+                Fonts</a></dt>
+            <dd>A bunch of free fonts.</dd>
+            <dd>Find desired font, download the font, use the .ttf file, and add CSS (<blockcode>@font-face {src: url(filename.ttf); font-family: fontname;}</blockcode>)</dd>
+            <dd>Comes with a cost, the website has to load the resources which slows down site speed.</dd>
+            <dd>Limit yourself to two or three fonts per page to help loading size/time.</dd>
+            <dd>Use fonts with multiple weights or styles to get more versitality without needing extra fonts</dd>
+        <dt><a href="https://giphy.com/" target="_blank" alt="a bunch of gifs">Giphy</a></dt>
+            <dd>A bunch of gifs for use.</dd>
+        <dt><a href="https://www.figma.com/" target="_blank" alt="figma, a site for creating layouts for developers">Figma</a></dt>
+            <dd>A site for creating layouts for developers.</dd>
+    </dl>    
+</div>
+<div class="accordion">
+    <h3 class="accordion-name">Definitions<span class="accordion-arrow"></span></h3>
+    <dl class="inner-accordion-content">
+        <dt>CSS Syntax</dt>
+            <dd>The way we write css code</dd>
+            <dd><blockcode>Selector {Property: Value};</blockcode></dd>
+        <dt>px</dt>
+            <dd>Pixel</dd>
+            <dd>The smallest unit of space that our screens can rendor.</dd>
+        <dt>Auto</dt>
+            <dd>Automatically adjusted.</dd>
+            <dd>Used for margin, if size is not declaired it will not work.</dd>
+            <dd>Takes up all available space.</dd>
+        <dt>The Box Model</dt>
+            <dd><img src="https://www.atatus.com/blog/content/images/2022/07/padding.png" alt="image displaying the box model margin, border, padding, and content" 
+                width="100%" />
+            </dd>
+            <dd>Margin, border, padding, content.</dd>
+        <dt>Relative Path Syntax</dt>
+            <dd>An address that points to the current directory or project folder.</dd>
+            <dd><blockcode>./</blockcode> starts from the same directory the current file is in, it is more explicit and gives a visual reminder your referencing a 
+                file within the project
+            </dd>
+            <dd><blockcode>../</blockcode> starts from the parent directory of (the directory above) the current file/</dd>
+            <dd><blockcode>/</blockcode> starts from the projects root directory.</dd>
+        <dt>Utility Class</dt>
+            <dd>A class for a single css property.</dd>
+            <dd>Example: <blockcode>.italic{font-style: italic;}</blockcode></dd>
+        <dt>CSS Inheritance</dt>
+            <dd>Controls what happens when no value is specified for a property on an element.</dd>
+            <dd>Learn to write DRYer (don't repeat yourself) code, fewer bugs, be more efficient.</dd>
+            <dd><a href="https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited" target="_blank" alt="a list of all 41 css properties that
+                are inherited">Css properties that are inherited</a>.</dd>
+        <dt>Web Safe Font</dt>
+            <dd>A font that's preinstalled in the browser.</dd>
+            <dd class="sub-list"><span>Web safe Fonts List:</span>
+                <ul>
+                    <li>Arial (sans-serif)</li>
+                    <li>Verdana (sans-serif)</li>
+                    <li>Tahoma (sans-serif)</li>
+                    <li>Trebuchet MS (sans-serif)</li>
+                    <li>Times New Roman (serif)</li>
+                    <li>Georgia (serif)</li>
+                    <li>Garamond (serif)</li>
+                    <li>Courier New (monospace)</li>
+                    <li>Brush Script MT (cursive)</li>
+                </ul>
+            </dd>
+        <dt>Font Stack</dt>
+            <dd>A list of fonts and font keywords used to let a browser know our preferred and fallback fonts</dd>
+            <dd><blockcode>font-family: Verdana, Geneva, Tahoma, sans-serif;</blockcode></dd>
+            <dd>Sans Serif is a font category, sans means without or not.</dd>
+        <dt><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element" target="_blank" alt="documentation on replaced elements">Replaced 
+            Elements</a>
+        </dt>
+            <dd>An elements whos representation is outside the scope of CSS.</dd>
+            <dd>Element is not rendered directly by the browser but an external process</dd>
+            <dd>The content of the replaced element is external to the HTML document</dd>
+        <dt>pseudo-class</dt>
+        <dd>a selector that selects elements that are in a specific state</dd>
+        <dd>:hover, :link, :visited, :active</dd>
+        <dt>specificity</dt>
+        <dd>The more specific a css selector is, the higher it will be prioritized</dd>
+        <dd>id selectors are more specific than classes</dd>
+        <dt>Em tag - emphasis</dt>
+        <dd>used for words or phrases that would be stressed when spoken</dd>
+        <dd>important for assistive technologies</dd>
+        <dd>italic</dd>
+        <dd>inline element</dd>
+        <dt>Strong tag</dt>
+        <dd>bold</dd>
+        <dd>used for importance seriousness or urgency</dd>
+        <dd>important for assistive technologies</dd>
+        <dd>inline element</dd>
+        <dt>Replaced Element</dt>
+        <dd>An element whos contents are not affected by CSS</dd>
+        <dd>iframe, audio, embed, video, img</dd>
+    </dl>
+</div>
+<div class="accordion">
+    <h3 class="accordion-name">Questions<span class="accordion-arrow"></span></h3>
+    <ul class="inner-accordion-content">
+        <li>Why do people use even numbers for px in css? -- because they are easier to divide if you
+            need to output different sized icons (???)</li>
+        <li class="sub-list">Is it better to do /folder/file or folder/file?
+            <ul>
+                <li>/folder/file = file is located in the folder at the root of the current web page
+                </li>
+                <li>folder/file = image is located in the folder in the current folder</li>
+                <li>../file = file is located in the folder one level up from the curent folder</li>
+            </ul>
+        </li>
+        <li>Should WAI-ARIA be used only for context relevent background images or all?</li>
+        <li>Is it bad practice to write list-style: none instead of listy-style-type: none to remove bullet points?</li>
+    </ul>
+</div>

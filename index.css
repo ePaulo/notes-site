@@ -241,3 +241,12 @@ a:hover {
 
   padding-right: 15px;
 }
+
+/**CODE SECTIONS**/
+blockcode {
+  background-color: #222;
+  font-family: "Source Code Pro", monospace;
+  color: whitesmoke;
+  font-size: .8em;
+  padding: .1em 15px;
+}
